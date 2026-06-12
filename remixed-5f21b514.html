@@ -1,0 +1,1512 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Korea Itinerary June 2026 ✈️</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap');
+
+  :root {
+    --pink: #FF6B9D;
+    --pink-light: #FFE0EE;
+    --pink-dark: #D4457B;
+    --purple: #9B5DE5;
+    --purple-light: #EDE0FF;
+    --teal: #00BBD6;
+    --teal-light: #DCFBFF;
+    --coral: #FF8C61;
+    --coral-light: #FFEDE5;
+    --gold: #F7B731;
+    --gold-light: #FFF6DC;
+    --green: #26D07C;
+    --green-light: #DFFFF1;
+    --gray-100: #F8F7FF;
+    --gray-200: #EFEFFF;
+    --gray-500: #888;
+    --gray-700: #444;
+    --gray-900: #1a1a2e;
+    --white: #fff;
+    --shadow: 0 4px 20px rgba(155,93,229,0.10);
+    --shadow-pink: 0 4px 20px rgba(255,107,157,0.15);
+    --radius: 16px;
+    --radius-sm: 10px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(135deg, #FFF0F8 0%, #F0F0FF 50%, #F0FFFC 100%);
+    min-height: 100vh;
+    color: var(--gray-900);
+  }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #9B5DE5 0%, #FF6B9D 50%, #00BBD6 100%);
+    padding: 48px 24px 36px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '🇰🇷 ✈️ 🎵 💜';
+    position: absolute; top: 10px; left: 0; right: 0;
+    font-size: 32px; opacity: 0.15; letter-spacing: 24px;
+  }
+  .hero h1 { color: #fff; font-size: 28px; font-weight: 800; margin-bottom: 6px; position: relative; }
+  .hero p { color: rgba(255,255,255,0.88); font-size: 14px; font-weight: 500; position: relative; }
+  .hero .badge-row { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-top: 14px; position: relative; }
+  .badge {
+    background: rgba(255,255,255,0.22);
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 20px; padding: 4px 14px;
+    color: #fff; font-size: 12px; font-weight: 600;
+  }
+
+  /* NAV */
+  .nav-tabs {
+    display: flex; gap: 0; background: #fff;
+    border-bottom: 2px solid var(--pink-light);
+    overflow-x: auto; scrollbar-width: none;
+    position: sticky; top: 0; z-index: 100;
+    box-shadow: 0 2px 12px rgba(155,93,229,0.08);
+  }
+  .nav-tabs::-webkit-scrollbar { display: none; }
+  .nav-tab {
+    padding: 12px 16px; font-size: 13px; font-weight: 700;
+    color: var(--gray-500); cursor: pointer; white-space: nowrap;
+    border-bottom: 3px solid transparent; transition: all 0.2s;
+    background: none; border-top: none; border-left: none; border-right: none;
+    font-family: 'Nunito', sans-serif;
+  }
+  .nav-tab:hover { color: var(--pink); }
+  .nav-tab.active { color: var(--pink); border-bottom-color: var(--pink); }
+
+  /* MAIN */
+  .main { max-width: 860px; margin: 0 auto; padding: 24px 16px 60px; }
+
+  /* DAY SECTION */
+  .day-section { display: none; }
+  .day-section.active { display: block; }
+
+  /* DAY HEADER */
+  .day-header {
+    border-radius: var(--radius);
+    padding: 20px 24px; margin-bottom: 20px;
+    display: flex; align-items: center; gap: 16px;
+  }
+  .day-num {
+    width: 52px; height: 52px; border-radius: 50%;
+    background: rgba(255,255,255,0.3); border: 2px solid rgba(255,255,255,0.6);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px; font-weight: 800; color: #fff; flex-shrink: 0;
+  }
+  .day-header h2 { color: #fff; font-size: 20px; font-weight: 800; margin-bottom: 2px; }
+  .day-header p { color: rgba(255,255,255,0.88); font-size: 13px; font-weight: 500; }
+  .day-type-badge {
+    margin-left: auto; background: rgba(255,255,255,0.25);
+    border: 1px solid rgba(255,255,255,0.5); border-radius: 20px;
+    padding: 4px 12px; color: #fff; font-size: 12px; font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  /* ALT TABS */
+  .alt-tabs {
+    display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap;
+  }
+  .alt-btn {
+    padding: 8px 18px; border-radius: 20px; font-size: 13px; font-weight: 700;
+    cursor: pointer; transition: all 0.2s; border: 2px solid;
+    font-family: 'Nunito', sans-serif; background: #fff;
+  }
+  .alt-btn.pink { border-color: var(--pink); color: var(--pink); }
+  .alt-btn.pink.active, .alt-btn.pink:hover { background: var(--pink); color: #fff; }
+  .alt-btn.purple { border-color: var(--purple); color: var(--purple); }
+  .alt-btn.purple.active, .alt-btn.purple:hover { background: var(--purple); color: #fff; }
+  .alt-btn.teal { border-color: var(--teal); color: var(--teal); }
+  .alt-btn.teal.active, .alt-btn.teal:hover { background: var(--teal); color: #fff; }
+
+  .alt-content { display: none; }
+  .alt-content.active { display: block; }
+
+  /* TIMELINE */
+  .timeline { position: relative; padding-left: 20px; }
+  .timeline::before {
+    content: ''; position: absolute; left: 8px; top: 0; bottom: 0;
+    width: 2px; background: linear-gradient(to bottom, var(--pink-light), var(--purple-light), var(--teal-light));
+  }
+
+  .tl-item {
+    position: relative; margin-bottom: 16px;
+    background: #fff; border-radius: var(--radius-sm);
+    padding: 14px 16px 14px 20px;
+    box-shadow: var(--shadow); border: 1px solid rgba(155,93,229,0.08);
+  }
+  .tl-item::before {
+    content: ''; position: absolute; left: -16px; top: 18px;
+    width: 10px; height: 10px; border-radius: 50%;
+    background: var(--pink); border: 2px solid #fff;
+    box-shadow: 0 0 0 2px var(--pink);
+  }
+  .tl-item.kpop::before { background: var(--purple); box-shadow: 0 0 0 2px var(--purple); }
+  .tl-item.shop::before { background: var(--teal); box-shadow: 0 0 0 2px var(--teal); }
+  .tl-item.food::before { background: var(--coral); box-shadow: 0 0 0 2px var(--coral); }
+  .tl-item.event::before { background: var(--gold); box-shadow: 0 0 0 2px var(--gold); }
+  .tl-item.transit::before { background: var(--gray-500); box-shadow: 0 0 0 2px var(--gray-500); }
+
+  .tl-time { font-size: 11px; font-weight: 700; color: var(--pink); margin-bottom: 4px; letter-spacing: 0.5px; }
+  .tl-item.kpop .tl-time { color: var(--purple); }
+  .tl-item.shop .tl-time { color: var(--teal); }
+  .tl-item.food .tl-time { color: var(--coral); }
+  .tl-item.event .tl-time { color: var(--gold-dark, #c99a00); }
+  .tl-item.transit .tl-time { color: var(--gray-500); }
+
+  .tl-title { font-size: 14px; font-weight: 700; color: var(--gray-900); margin-bottom: 4px; }
+  .tl-desc { font-size: 12px; color: var(--gray-500); line-height: 1.6; }
+
+  .tl-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px; }
+  .tl-tag {
+    font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px;
+  }
+  .tag-kpop { background: var(--purple-light); color: var(--purple); }
+  .tag-transit { background: var(--gray-200); color: var(--gray-700); }
+  .tag-food { background: var(--coral-light); color: #c05a2b; }
+  .tag-shop { background: var(--teal-light); color: #007a8f; }
+  .tag-sight { background: var(--pink-light); color: var(--pink-dark); }
+  .tag-event { background: var(--gold-light); color: #8a6800; }
+  .tag-free { background: var(--green-light); color: #1a7a4e; }
+  .tag-hanbok { background: #FFE9D6; color: #B5651D; }
+
+  /* INFO BOX */
+  .info-box {
+    border-radius: var(--radius-sm); padding: 12px 16px; margin-bottom: 20px;
+    display: flex; gap: 10px; align-items: flex-start;
+  }
+  .info-box.pink { background: var(--pink-light); border-left: 4px solid var(--pink); }
+  .info-box.purple { background: var(--purple-light); border-left: 4px solid var(--purple); }
+  .info-box.gold { background: var(--gold-light); border-left: 4px solid var(--gold); }
+  .info-box p { font-size: 12px; color: var(--gray-700); line-height: 1.6; }
+  .info-box strong { font-weight: 700; }
+  .info-icon { font-size: 20px; flex-shrink: 0; }
+
+  /* TRANSIT CARD */
+  .transit-card {
+    background: var(--gray-100); border: 1px solid var(--gray-200);
+    border-radius: var(--radius-sm); padding: 12px 16px; margin: 8px 0;
+    font-size: 12px; color: var(--gray-700);
+  }
+  .transit-card strong { color: var(--gray-900); font-weight: 700; }
+  .transit-steps { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-top: 6px; }
+  .transit-step { 
+    background: #fff; border: 1px solid var(--gray-200);
+    border-radius: 8px; padding: 4px 10px; font-size: 11px; font-weight: 600;
+  }
+  .transit-arr { color: var(--gray-500); font-size: 14px; }
+
+  /* LEGEND */
+  .legend {
+    display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px;
+    background: #fff; border-radius: var(--radius-sm); padding: 14px 16px;
+    box-shadow: var(--shadow);
+  }
+  .legend-item { display: flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600; color: var(--gray-700); }
+  .legend-dot { width: 10px; height: 10px; border-radius: 50%; }
+
+  /* TIPS BOX */
+  .tips-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-bottom: 24px; }
+  .tip-card {
+    background: #fff; border-radius: var(--radius-sm); padding: 14px;
+    box-shadow: var(--shadow); border-top: 3px solid var(--pink);
+  }
+  .tip-card.purple { border-top-color: var(--purple); }
+  .tip-card.teal { border-top-color: var(--teal); }
+  .tip-card.coral { border-top-color: var(--coral); }
+  .tip-card h4 { font-size: 13px; font-weight: 700; margin-bottom: 6px; }
+  .tip-card p { font-size: 12px; color: var(--gray-500); line-height: 1.6; }
+
+  /* ACCOMMODATION */
+  .accom-card {
+    background: linear-gradient(135deg, var(--purple-light), var(--pink-light));
+    border-radius: var(--radius); padding: 18px; margin-bottom: 20px;
+    border: 1px solid rgba(155,93,229,0.15);
+  }
+  .accom-card h3 { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
+  .accom-card p { font-size: 12px; color: var(--gray-700); }
+
+  /* CHECKLIST */
+  .checklist-item {
+    display: flex; align-items: center; gap: 10px;
+    padding: 8px 0; border-bottom: 1px solid var(--gray-200);
+    font-size: 13px; cursor: pointer;
+  }
+  .checklist-item:last-child { border-bottom: none; }
+  .check-box {
+    width: 18px; height: 18px; border-radius: 50%;
+    border: 2px solid var(--pink); flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    transition: all 0.2s;
+  }
+  .checklist-item.checked .check-box { background: var(--pink); }
+  .checklist-item.checked span { text-decoration: line-through; color: var(--gray-500); }
+  .check-inner { width: 6px; height: 6px; border-radius: 50%; background: #fff; }
+
+  /* SECTION TITLE */
+  .section-title { font-size: 16px; font-weight: 800; color: var(--gray-900); margin: 20px 0 12px; display: flex; align-items: center; gap: 8px; }
+
+  /* HOW TO EDIT BOX */
+  .edit-guide {
+    background: #fff; border-radius: var(--radius); padding: 18px;
+    box-shadow: var(--shadow); margin-bottom: 20px; border: 2px dashed var(--purple);
+  }
+  .edit-guide h3 { font-size: 15px; font-weight: 800; margin-bottom: 8px; color: var(--purple); }
+  .edit-guide p, .edit-guide li { font-size: 12px; color: var(--gray-700); line-height: 1.7; }
+  .edit-guide ol { padding-left: 20px; margin-top: 6px; }
+  .edit-guide code { background: var(--purple-light); padding: 1px 6px; border-radius: 4px; font-size: 11px; }
+
+  /* RESPONSIVE */
+  @media (max-width: 600px) {
+    .hero h1 { font-size: 22px; }
+    .tl-item { padding: 12px 12px 12px 16px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>🇰🇷 Korea Trip — Juni 2026</h1>
+  <p>Gwanak-gu, Seoul · 15–21 Juni 2026 · 7 Hari Penuh Petualangan</p>
+  <div class="badge-row">
+    <span class="badge">✈️ 7 Hari</span>
+    <span class="badge">🎵 K-Pop Fan</span>
+    <span class="badge">💰 Budget Hemat</span>
+    <span class="badge">👭 Bareng Temen</span>
+    <span class="badge">🏠 Gwanak-gu Base</span>
+  </div>
+</div>
+
+<div class="nav-tabs" id="navTabs">
+  <button class="nav-tab active" onclick="showDay('overview')">🗺️ Overview</button>
+  <button class="nav-tab" onclick="showDay('day1')">15 Jun</button>
+  <button class="nav-tab" onclick="showDay('day2')">16 Jun</button>
+  <button class="nav-tab" onclick="showDay('day3')">17 Jun</button>
+  <button class="nav-tab" onclick="showDay('day4')">18 Jun</button>
+  <button class="nav-tab" onclick="showDay('day5')">19 Jun</button>
+  <button class="nav-tab" onclick="showDay('day6')">20 Jun</button>
+  <button class="nav-tab" onclick="showDay('day7')">21 Jun</button>
+  <button class="nav-tab" onclick="showDay('tips')">💡 Tips</button>
+</div>
+
+<div class="main">
+
+<!-- OVERVIEW -->
+<div id="day-overview" class="day-section active">
+
+  <div class="edit-guide">
+    <h3>✏️ Cara Edit Itinerary Ini</h3>
+    <p>Halaman ini bukan dibuat dari Canva, jadi belum ada fitur drag-and-drop visual. Tapi ini tetap gampang diedit — caranya:</p>
+    <ol>
+      <li><strong>Cara paling gampang:</strong> Ketik di chat apa yang mau diubah (jam, lokasi, urutan, nama tempat, dll) seperti contoh sebelumnya, dan minta Claude untuk update bagian itu.</li>
+      <li>Kamu bisa minta ganti per-hari, per-kotak (<code>tl-item</code>), ganti warna, tambah/hapus alternatif (Alt A/B/C), atau ubah teks kapan saja.</li>
+      <li>Kalau mau edit manual sendiri: setiap kotak kegiatan ada di dalam blok <code>&lt;div class="tl-item"&gt;...&lt;/div&gt;</code> — tinggal ubah teks di antara tag <code>&lt;div class="tl-title"&gt;</code> dan <code>&lt;div class="tl-desc"&gt;</code>.</li>
+    </ol>
+  </div>
+
+  <div class="accom-card">
+    <h3>🏠 Penginapan — Home in Gwanak-gu</h3>
+    <p>885-37 Jungang-dong, Gwanak-gu, Seoul</p>
+    <p style="margin-top:6px">📍 Stasiun terdekat: <strong>Seoul National Univ (Line 2)</strong> atau <strong>Nakseongdae (Line 2)</strong> · Naik subway Line 2 (hijau) ke mana-mana!</p>
+  </div>
+
+  <div class="legend">
+    <div class="legend-item"><div class="legend-dot" style="background:var(--pink)"></div> Wisata Umum</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--purple)"></div> K-Pop</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--teal)"></div> Shopping/Jastip</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--coral)"></div> Makan</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--gold)"></div> Event Khusus</div>
+    <div class="legend-item"><div class="legend-dot" style="background:var(--gray-500)"></div> Transit</div>
+  </div>
+
+  <div class="section-title">📅 Ringkasan 7 Hari</div>
+  <div style="display:grid; gap:10px;">
+    <div style="background:#fff; border-radius:var(--radius-sm); padding:14px 16px; box-shadow:var(--shadow); display:flex; gap:12px; align-items:center;">
+      <div style="min-width:70px; font-weight:700; font-size:13px; color:var(--pink)">15 Jun (Min)</div>
+      <div style="font-size:13px; color:var(--gray-700)">Arrival Day · Myeongdong · CT Record · Olive Young · Daiso · Namsan Tower malam</div>
+      <div style="margin-left:auto; font-size:11px; background:var(--pink-light); color:var(--pink-dark); padding:2px 8px; border-radius:10px; font-weight:700; white-space:nowrap">Mix</div>
+    </div>
+    <div style="background:#fff; border-radius:var(--radius-sm); padding:14px 16px; box-shadow:var(--shadow); display:flex; gap:12px; align-items:center;">
+      <div style="min-width:70px; font-weight:700; font-size:13px; color:var(--pink)">16 Jun (Sen)</div>
+      <div style="font-size:13px; color:var(--gray-700)">Hanbok di Gyeongbokgung & Bukchon · Makan Korea (Iftar) · Ikseondong Hanok Street · Namsan Tower</div>
+      <div style="margin-left:auto; font-size:11px; background:#FFE9D6; color:#B5651D; padding:2px 8px; border-radius:10px; font-weight:700; white-space:nowrap">Hanbok Day</div>
+    </div>
+    <div style="background:#fff; border-radius:var(--radius-sm); padding:14px 16px; box-shadow:var(--shadow); display:flex; gap:12px; align-items:center;">
+      <div style="min-width:70px; font-weight:700; font-size:13px; color:var(--pink)">17 Jun (Sel)</div>
+      <div style="font-size:13px; color:var(--gray-700)">Starfield Library · COEX Ktown4u · K-Star Road · Gangnam Statue · Han River</div>
+      <div style="margin-left:auto; font-size:11px; background:var(--purple-light); color:var(--purple); padding:2px 8px; border-radius:10px; font-weight:700; white-space:nowrap">Mix+KPop</div>
+    </div>
+    <div style="background:#fff; border-radius:var(--radius-sm); padding:14px 16px; box-shadow:var(--shadow); display:flex; gap:12px; align-items:center;">
+      <div style="min-width:70px; font-weight:700; font-size:13px; color:var(--pink)">18 Jun (Rab)</div>
+      <div style="font-size:13px; color:var(--gray-700)">Mangwon Market · Hongdae (Stella Lovers Club Event!) · Busking malam</div>
+      <div style="margin-left:auto; font-size:11px; background:var(--gold-light); color:#8a6800; padding:2px 8px; border-radius:10px; font-weight:700; white-space:nowrap">Event Day</div>
+    </div>
+    <div style="background:#fff; border-radius:var(--radius-sm); padding:14px 16px; box-shadow:var(--shadow); display:flex; gap:12px; align-items:center;">
+      <div style="min-width:70px; font-weight:700; font-size:13px; color:var(--pink)">19 Jun (Kam)</div>
+      <div style="font-size:13px; color:var(--gray-700)">FULL K-POP · HYBE · Hoshi Birthday Event (Cafe 2734) · Hongdae K-Pop stores</div>
+      <div style="margin-left:auto; font-size:11px; background:var(--purple-light); color:var(--purple); padding:2px 8px; border-radius:10px; font-weight:700; white-space:nowrap">Full KPop</div>
+    </div>
+    <div style="background:#fff; border-radius:var(--radius-sm); padding:14px 16px; box-shadow:var(--shadow); display:flex; gap:12px; align-items:center;">
+      <div style="min-width:70px; font-weight:700; font-size:13px; color:var(--pink)">20 Jun (Jum)</div>
+      <div style="font-size:13px; color:var(--gray-700)">FULL K-POP · Seongsu area · SM/JYP buildings · Poca spot hunting · Myeongdong</div>
+      <div style="margin-left:auto; font-size:11px; background:var(--purple-light); color:var(--purple); padding:2px 8px; border-radius:10px; font-weight:700; white-space:nowrap">Full KPop</div>
+    </div>
+    <div style="background:#fff; border-radius:var(--radius-sm); padding:14px 16px; box-shadow:var(--shadow); display:flex; gap:12px; align-items:center;">
+      <div style="min-width:70px; font-weight:700; font-size:13px; color:var(--pink)">21 Jun (Sab)</div>
+      <div style="font-size:13px; color:var(--gray-700)">Belanja last minute · Soul My Soul · Dongdaemun · Packing · Departure</div>
+      <div style="margin-left:auto; font-size:11px; background:var(--teal-light); color:#007a8f; padding:2px 8px; border-radius:10px; font-weight:700; white-space:nowrap">Jastip Day</div>
+    </div>
+  </div>
+
+  <div class="section-title" style="margin-top:28px">✅ Checklist Persiapan</div>
+  <div style="background:#fff; border-radius:var(--radius-sm); padding:16px; box-shadow:var(--shadow);">
+    <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box"><div class="check-inner"></div></div><span>T-Money Card / WOWPASS untuk subway & bus</span></div>
+    <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box"><div class="check-inner"></div></div><span>Download NAVER Maps (lebih akurat dari Google di Korea)</span></div>
+    <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box"><div class="check-inner"></div></div><span>Download Papago untuk translate</span></div>
+    <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box"><div class="check-inner"></div></div><span>Bawa paspor untuk Tax Free refund</span></div>
+    <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box"><div class="check-inner"></div></div><span>Pocket WiFi / Korea SIM Card</span></div>
+    <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box"><div class="check-inner"></div></div><span>Budget: estimasi 1 juta KRW untuk transport + makan + jastip dasar</span></div>
+    <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box"><div class="check-inner"></div></div><span>Cek event Stella Lovers Club 18-19 Juni (Cafe Mellang, Hongdae)</span></div>
+    <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box"><div class="check-inner"></div></div><span>Cek info birthday party Hoshi (Cafe 2734, Hongdae)</span></div>
+    <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box"><div class="check-inner"></div></div><span>Booking sewa Hanbok (Pink Hanbok atau Daehan Hanbok) untuk 16 Juni</span></div>
+  </div>
+</div>
+
+<!-- DAY 1: 15 Juni -->
+<div id="day-day1" class="day-section">
+  <div class="day-header" style="background: linear-gradient(135deg, #FF6B9D, #FF8C61);">
+    <div class="day-num">1</div>
+    <div><h2>Minggu, 15 Juni</h2><p>Arrival & Myeongdong + Namsan Tower malam</p></div>
+    <div class="day-type-badge">Mix Day</div>
+  </div>
+
+  <div class="info-box gold">
+    <span class="info-icon">⚠️</span>
+    <p><strong>Hari kedatangan!</strong> Sesuaikan waktu berangkat dari penginapan dengan jam tiba pesawat. Itinerary di bawah mulai dari siang/sore hari. Prioritas hari ini: ambil T-Money card, explore Myeongdong buat jastip & Namsan Tower!</p>
+  </div>
+
+  <div class="alt-tabs">
+    <button class="alt-btn pink active" onclick="showAlt('day1','a',this)">✨ Alt A — Myeongdong + Namsan</button>
+    <button class="alt-btn purple" onclick="showAlt('day1','b',this)">🎵 Alt B — Myeongdong + HiKR Ground</button>
+    <button class="alt-btn teal" onclick="showAlt('day1','c',this)">🛒 Alt C — Belanja Dulu + Han River</button>
+  </div>
+
+  <div id="day1-a" class="alt-content active">
+    <div class="info-box pink"><span class="info-icon">🌟</span><p><strong>Rekomendasi Alt A:</strong> Paling clasik untuk arrival day. Myeongdong buat jastip + Namsan Tower sore/malam untuk view kota yang cantik. Sejalur: dari Gwanak → Myeongdong (Line 4) → Namsan (jalan kaki/cable car).</p></div>
+    <div class="timeline">
+      <div class="tl-item transit">
+        <div class="tl-time">13:00 — BERANGKAT</div>
+        <div class="tl-title">🏠 Start dari Penginapan Gwanak-gu</div>
+        <div class="tl-desc">Naik subway dari Stasiun Seoul National Univ (Line 2 hijau) ke arah Euljiro 3-ga, transfer ke Line 4 (biru), turun di Stasiun Myeongdong.</div>
+        <div class="tl-tags"><span class="tl-tag tag-transit">Subway Line 2 → Line 4</span><span class="tl-tag tag-transit">±40 menit</span><span class="tl-tag tag-transit">±1,650 KRW</span></div>
+        <div class="transit-card">
+          <strong>Rute Transit Detail:</strong>
+          <div class="transit-steps">
+            <div class="transit-step">🟢 Line 2 dari Seoul Nat'l Univ</div>
+            <span class="transit-arr">→</span>
+            <div class="transit-step">Transfer di Euljiro 3-ga</div>
+            <span class="transit-arr">→</span>
+            <div class="transit-step">🔵 Line 4 ke Myeongdong Stn</div>
+            <span class="transit-arr">→</span>
+            <div class="transit-step">Exit 5 atau 6</div>
+          </div>
+        </div>
+      </div>
+      <div class="tl-item shop">
+        <div class="tl-time">13:45 — 15:00</div>
+        <div class="tl-title">🛒 CT Record — Album K-Pop Murah!</div>
+        <div class="tl-desc">Di dalam Myeongdong Station Underground Mall (Exit 4). Beli album, photocard dengan harga paling murah. Tidak ada tax refund, tapi harga sudah sangat terjangkau!</div>
+        <div class="tl-tags"><span class="tl-tag tag-shop">Jastip</span><span class="tl-tag tag-kpop">K-Pop</span><span class="tl-tag tag-transit">Buka 11:00-21:30</span></div>
+      </div>
+      <div class="tl-item shop">
+        <div class="tl-time">15:00 — 16:30</div>
+        <div class="tl-title">🌿 Olive Young Myeongdong Town</div>
+        <div class="tl-desc">2 lantai! Lantai 1: skincare. Lantai 2: makeup, parfum, men's care. Bawa paspor untuk tax free refund. Ini adalah surga skincare Korea!</div>
+        <div class="tl-tags"><span class="tl-tag tag-shop">Jastip</span><span class="tl-tag tag-free">Tax Free</span><span class="tl-tag tag-transit">Buka sampai 22:30</span></div>
+      </div>
+      <div class="tl-item shop">
+        <div class="tl-time">16:30 — 17:30</div>
+        <div class="tl-title">🏪 Daiso Myeongdong — 12 Lantai!</div>
+        <div class="tl-desc">Di Myeongdong Station Line 4. 12 lantai penuh barang seru! Naik lift dari atas (lantai 12) terus jalan ke bawah. Tips: antri lift bisa 20 menit. Mulai dari atas biar efisien!</div>
+        <div class="tl-tags"><span class="tl-tag tag-shop">Jastip</span><span class="tl-tag tag-transit">Buka sampai 22:00</span></div>
+      </div>
+      <div class="tl-item food">
+        <div class="tl-time">17:30 — 18:30</div>
+        <div class="tl-title">🍗 Makan Malam — BHC Chicken atau Street Food Myeongdong</div>
+        <div class="tl-desc">BHC Chicken ada di Myeongdong area. Atau coba street food Myeongdong: tteokbokki (떡볶이), odeng, hotteok, corn dog. Murah & enak banget! Budget ±10,000-15,000 KRW.</div>
+        <div class="tl-tags"><span class="tl-tag tag-food">Makan</span><span class="tl-tag tag-free">Budget Friendly</span></div>
+      </div>
+      <div class="tl-item transit">
+        <div class="tl-time">18:45 — 19:00</div>
+        <div class="tl-title">🚌 Transit ke Namsan Tower</div>
+        <div class="tl-desc">Dari Myeongdong jalan kaki ke halte bus. Naik bus 02 atau 05 (Namsan Sunhwan Bus / 남산순환버스) dari depan Myeongdong. Rute juga bisa jalan kaki naik via Namsan Park (sekitar 20-30 menit jalan).</div>
+        <div class="tl-tags"><span class="tl-tag tag-transit">Bus 02 Namsan Sunhwan</span><span class="tl-tag tag-transit">±1,200 KRW</span></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">19:00 — 21:00</div>
+        <div class="tl-title">🗼 N Seoul Tower (Namsan Tower)</div>
+        <div class="tl-desc">View Seoul dari atas! Sunset di sini sekitar jam 20:00-20:30 di bulan Juni. Lihat love locks, foto-foto, observasi sunset & city lights. Pilihan: beli tiket observasi (±15,000 KRW) atau gratis di taman sekitar tower.</div>
+        <div class="tl-tags"><span class="tl-tag tag-sight">Wisata</span><span class="tl-tag tag-free">Area luar GRATIS</span><span class="tl-tag tag-transit">Buka sampai 22:30</span></div>
+      </div>
+      <div class="tl-item transit">
+        <div class="tl-time">21:00 — 22:00</div>
+        <div class="tl-title">🏠 Pulang ke Penginapan</div>
+        <div class="tl-desc">Turun Namsan dengan bus 02/05 ke Myeongdong. Dari Myeongdong Station naik Line 4 ke Euljiro 3-ga, transfer Line 2 hijau ke Seoul National Univ Station.</div>
+        <div class="tl-tags"><span class="tl-tag tag-transit">Line 4 → Line 2</span><span class="tl-tag tag-transit">±40 menit</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="day1-b" class="alt-content">
+    <div class="info-box purple"><span class="info-icon">🎵</span><p><strong>Alt B — Myeongdong + HiKR Ground:</strong> Lebih kpop-friendly! HiKR Ground gratis, interaktif, 5 lantai pengalaman K-pop & budaya Korea. Cocok buat temen non-kpop juga karena visualnya keren. Sejalur Myeongdong → Cheonggyecheon (jalan kaki ±15 menit).</p></div>
+    <div class="timeline">
+      <div class="tl-item transit">
+        <div class="tl-time">13:00 — BERANGKAT</div>
+        <div class="tl-title">🏠 Start dari Penginapan</div>
+        <div class="tl-desc">Line 2 → Transfer Euljiro 3-ga → Line 4 turun Myeongdong Station (Exit 5/6).</div>
+        <div class="tl-tags"><span class="tl-tag tag-transit">Line 2 → Line 4</span><span class="tl-tag tag-transit">±40 menit</span></div>
+      </div>
+      <div class="tl-item shop">
+        <div class="tl-time">13:45 — 15:30</div>
+        <div class="tl-title">🛒 Myeongdong Shopping Spree</div>
+        <div class="tl-desc">CT Record (Exit 4 underground) + Olive Young + Daiso. Urutan: CT Record dulu (buka jam 11), lalu Olive Young (di sepanjang Myeongdong-gil), terakhir Daiso. Semua dalam radius jalan kaki!</div>
+        <div class="tl-tags"><span class="tl-tag tag-shop">Jastip</span><span class="tl-tag tag-kpop">K-Pop</span></div>
+      </div>
+      <div class="tl-item food">
+        <div class="tl-time">15:30 — 16:00</div>
+        <div class="tl-title">🍡 Street Food Myeongdong</div>
+        <div class="tl-desc">Snack dulu di street food Myeongdong — hotteok, tteokbokki, mochi. Budget ±5,000 KRW.</div>
+        <div class="tl-tags"><span class="tl-tag tag-food">Snack</span><span class="tl-tag tag-free">Budget Friendly</span></div>
+      </div>
+      <div class="tl-item transit">
+        <div class="tl-time">16:00 — 16:20</div>
+        <div class="tl-title">🚶 Jalan Kaki ke HiKR Ground</div>
+        <div class="tl-desc">Dari Myeongdong jalan kaki ±15 menit ke arah Cheonggyecheon (40 Cheonggyecheon-ro, Jung-gu). Atau naik subway Line 1 dari City Hall (1 stop ke Jonggak, jalan kaki 5 menit).</div>
+        <div class="tl-tags"><span class="tl-tag tag-transit">Jalan kaki ±15 menit</span></div>
+      </div>
+      <div class="tl-item kpop">
+        <div class="tl-time">16:20 — 19:00</div>
+        <div class="tl-title">🎵 HiKR Ground — GRATIS!</div>
+        <div class="tl-desc">5 lantai pengalaman K-Pop & budaya Korea! Interaktif: foto studio, DJ experience, karaoke K-Pop, exhibition K-drama. Perfect untuk kpop fans & temen non-kpop sekalian! GRATIS masuk. Buka Selasa-Minggu 10:00-20:00 (TUTUP SENIN).</div>
+        <div class="tl-tags"><span class="tl-tag tag-kpop">K-Pop</span><span class="tl-tag tag-free">GRATIS</span><span class="tl-tag tag-sight">Wajib Kunjungi</span></div>
+      </div>
+      <div class="tl-item food">
+        <div class="tl-time">19:00 — 20:00</div>
+        <div class="tl-title">🍗 Makan Malam Myeongdong / Cheonggyecheon Area</div>
+        <div class="tl-desc">Kembali ke Myeongdong untuk makan. Coba Kimchi Jjigae (찌개), Bulgogi (불고기), atau BBQ Korea. Area Myeongdong banyak restoran budget ±15,000-25,000 KRW.</div>
+        <div class="tl-tags"><span class="tl-tag tag-food">Makan Malam</span></div>
+      </div>
+      <div class="tl-item transit">
+        <div class="tl-time">20:00 — 21:00</div>
+        <div class="tl-title">🏠 Pulang ke Penginapan</div>
+        <div class="tl-desc">Myeongdong Station Line 4 → Euljiro 3-ga → Line 2 ke Seoul National Univ Station.</div>
+        <div class="tl-tags"><span class="tl-tag tag-transit">±40 menit</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="day1-c" class="alt-content">
+    <div class="info-box teal"><span class="info-icon">🛒</span><p><strong>Alt C — Full Belanja + Han River Sunset:</strong> Fokus jastip maksimal hari pertama + santai di Han River. Sejalur: Myeongdong → Namdaemun Market (jalan kaki) → Han River (naik bus).</p></div>
+    <div class="timeline">
+      <div class="tl-item transit">
+        <div class="tl-time">13:00 — BERANGKAT</div>
+        <div class="tl-title">🏠 Start dari Penginapan</div>
+        <div class="tl-desc">Line 2 → Euljiro 3-ga → Line 4 → Myeongdong Station.</div>
+        <div class="tl-tags"><span class="tl-tag tag-transit">±40 menit</span></div>
+      </div>
+      <div class="tl-item shop">
+        <div class="tl-time">13:45 — 16:00</div>
+        <div class="tl-title">🛒 Myeongdong Jastip Haul</div>
+        <div class="tl-desc">CT Record (album K-Pop) → Olive Young (2 lantai, bawa paspor tax free!) → Daiso 12 lantai. Alokasikan budget yang cukup karena ini adalah belanja hari pertama!</div>
+        <div class="tl-tags"><span class="tl-tag tag-shop">Jastip</span><span class="tl-tag tag-kpop">K-Pop</span></div>
+      </div>
+      <div class="tl-item shop">
+        <div class="tl-time">16:00 — 17:00</div>
+        <div class="tl-title">🏪 Namdaemun Market (jalan kaki dari Myeongdong)</div>
+        <div class="tl-desc">Hanya ±15 menit jalan kaki dari Myeongdong! Pasar tradisional yang besar. Cari souvenir murah, baju, makanan. Grosir harga murah. Buka sampai malam.</div>
+        <div class="tl-tags"><span class="tl-tag tag-shop">Shopping</span><span class="tl-tag tag-free">Budget Friendly</span></div>
+      </div>
+      <div class="tl-item food">
+        <div class="tl-time">17:00 — 17:45</div>
+        <div class="tl-title">🍳 Makan di Namdaemun Market</div>
+        <div class="tl-desc">Cicipi Kalguksu (칼국수 - mie pisau), Hotteok manis, atau Japchae di warung dalam pasar. Sangat murah dan otentik! ±6,000-10,000 KRW.</div>
+        <div class="tl-tags"><span class="tl-tag tag-food">Makan</span><span class="tl-tag tag-free">Super Murah</span></div>
+      </div>
+      <div class="tl-item transit">
+        <div class="tl-time">17:45 — 18:15</div>
+        <div class="tl-title">🚌 Bus ke Han River (Yeouido Park)</div>
+        <div class="tl-desc">Dari Namdaemun/Myeongdong naik bus 150 atau 463 ke Yeouido Han River Park. Atau subway: Line 5 (ungu) ke Yeouido Station Exit 1, jalan ±10 menit ke tepi sungai.</div>
+        <div class="tl-tags"><span class="tl-tag tag-transit">Bus 150 / Line 5 Yeouido</span><span class="tl-tag tag-transit">±30 menit</span></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">18:15 — 20:30</div>
+        <div class="tl-title">🌅 Han River — Sunset & Piknik</div>
+        <div class="tl-desc">Sunset di Han River bulan Juni sekitar jam 19:40-20:00. Beli convenience store food (CU/GS25 di tepi sungai) untuk piknik — ramyeon panas, kimbap, bunggeoppang! Budget makan ±5,000-8,000 KRW. Sewa sepeda juga bisa!</div>
+        <div class="tl-tags"><span class="tl-tag tag-sight">Han River</span><span class="tl-tag tag-free">GRATIS masuk</span><span class="tl-tag tag-free">Budget Friendly</span></div>
+      </div>
+      <div class="tl-item transit">
+        <div class="tl-time">20:30 — 21:30</div>
+        <div class="tl-title">🏠 Pulang ke Penginapan</div>
+        <div class="tl-desc">Dari Yeouido Station Line 5 → Euljiro 3-ga → Line 2 ke Seoul National Univ Station.</div>
+        <div class="tl-tags"><span class="tl-tag tag-transit">Line 5 → Line 2</span><span class="tl-tag tag-transit">±50 menit</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DAY 2: 16 Juni — REVISI BARU -->
+<div id="day-day2" class="day-section">
+  <div class="day-header" style="background: linear-gradient(135deg, #FFB199, #B5651D);">
+    <div class="day-num">2</div>
+    <div><h2>Senin, 16 Juni</h2><p>Hanbok Day — Gyeongbokgung, Ikseondong Hanok Street & Namsan Tower</p></div>
+    <div class="day-type-badge">👘 Hanbok Day</div>
+  </div>
+
+  <div class="info-box gold">
+    <span class="info-icon">👘</span>
+    <p><strong>Catatan:</strong> Kalau pakai Hanbok dan masuk ke Gyeongbokgung Palace serta National Folk Museum, masuknya bisa <strong>GRATIS</strong> (khusus pengunjung berhanbok)! Sewa di <strong>Pink Hanbok</strong> (137-3 Sajik-ro, Jongno-gu) atau <strong>Daehan Hanbok</strong>, keduanya dekat area Gyeongbokgung. Bukchon Hanok Village dikunjungi kalau waktu masih cukup.</p>
+  </div>
+
+  <div class="alt-tabs">
+    <button class="alt-btn pink active" onclick="showAlt('day2','a',this)">👘 Alt A — Hanbok Full Day (Sesuai Rencana)</button>
+    <button class="alt-btn purple" onclick="showAlt('day2','b',this)">🎵 Alt B — Hanbok + HiKR Ground</button>
+  </div>
+
+  <div id="day2-a" class="alt-content active">
+    <div class="info-box pink"><span class="info-icon">🌸</span><p><strong>Alt A — Rute Sesuai Rencana Kamu:</strong> Sarapan → Sewa Hanbok → Gyeongbokgung + National Folk Museum (+Bukchon kalau sempat) → makan siang di Iftar → Ikseondong Hanok Street (cafe hopping & makan malam) → Namsan Tower → pulang.</p></div>
+    <div class="timeline">
+      <div class="tl-item food">
+        <div class="tl-time">07:00 — 08:00</div>
+        <div class="tl-title">🍳 Sarapan & Siap-siap</div>
+        <div class="tl-desc">Sarapan di penginapan atau convenience store terdekat (GS25/CU) di Gwanak-gu. Siapkan semua barang yang dibutuhkan untuk hari ini.</div>
+        <div class="tl-tags"><span class="tl-tag tag-food">Sarapan</span></div>
+      </div>
+      <div class="tl-item transit">
+        <div class="tl-time">08:00 — 09:00</div>
+        <div class="tl-title">🚇 Perjalanan ke Gyeongbokgung Palace (Sewa Hanbok)</div>
+        <div class="tl-desc">Dari Seoul National Univ Station naik Line 2 → transfer ke Line 3 (oranye) di Euljiro 3-ga → turun di Gyeongbokgung Station (경복궁역) Exit 5. Lokasi sewa hanbok: <strong>Pink Hanbok</strong> (137-3 Sajik-ro, Jongno-gu, Seoul) atau <strong>Daehan Hanbok</strong>, keduanya jalan kaki dari stasiun.</div>
+        <div class="tl-tags"><span class="tl-tag tag-transit">Line 2 → Line 3 Gyeongbokgung</span><span class="tl-tag tag-transit">±55 menit</span><span class="tl-tag tag-hanbok">Sewa Hanbok</span></div>
+        <div class="transit-card">
+          <strong>Rute Detail:</strong>
+          <div class="transit-steps">
+            <div class="transit-step">🟢 Line 2 Seoul Nat'l Univ</div>
+            <span class="transit-arr">→</span>
+            <div class="transit-step">Transfer Euljiro 3-ga</div>
+            <span class="transit-arr">→</span>
+            <div class="transit-step">🟠 Line 3 ke Gyeongbokgung Stn</div>
+            <span class="transit-arr">→</span>
+            <div class="transit-step">Exit 5 (ke Pink/Daehan Hanbok)</div>
+          </div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">09:00 — 10:00</div>
+        <div class="tl-title">👘 Sewa Hanbok</div>
+        <div class="tl-desc">Pilih hanbok di Pink Hanbok (137-3 Sajik-ro, Jongno-gu) atau Daehan Hanbok. Sewa biasanya 2-4 jam paket, sudah termasuk aksesoris rambut. Harga umumnya mulai ±15,000-25,000 KRW per orang.</div>
+        <div class="tl-tags"><span class="tl-tag tag-hanbok">Hanbok Rental</span><span class="tl-tag tag-sight">Persiapan</span></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">10:00 — 12:30</div>
+        <div class="tl-title">🏯 Gyeongbokgung Palace & National Folk Museum (+ Bukchon jika sempat)</div>
+        <div class="tl-desc">Dengan hanbok, masuk Gyeongbokgung Palace dan National Folk Museum GRATIS! Explore istana, foto di depan Gwanghwamun Gate, lihat pergantian penjaga (jam 10:00). National Folk Museum ada di dalam kompleks istana — koleksi budaya tradisional Korea. Kalau waktu masih cukup, lanjut jalan kaki ke Bukchon Hanok Village (±10 menit) untuk foto hanbok di lorong hanok yang iconic!</div>
+        <div class="tl-tags"><span class="tl-tag tag-sight">Wisata</span><span class="tl-tag tag-free">GRATIS dengan Hanbok</span><span class="tl-tag tag-hanbok">Foto Hanbok</span></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">12:30 — 13:00</div>
+        <div class="tl-title">📸 Explore & Foto-foto</div>
+        <div class="tl-desc">Waktu santai untuk foto-foto dengan hanbok di area istana/Bukchon sebelum lanjut ke makan siang. Manfaatkan cahaya siang yang bagus untuk foto!</div>
+        <div class="tl-tags"><span class="tl-tag tag-sight">Foto Session</span><span class="tl-tag tag-hanbok">Hanbok</span></div>
+      </div>
+      <div class="tl-item transit">
+        <div class="tl-time">13:00 — 13:30</div>
+        <div class="tl-title">🚶 Perjalanan Menuju Makan Siang (Iftar)</div>
+        <div class="tl-desc">Dari Gyeongbokgung/Bukchon, jalan kaki atau naik subway singkat ke restoran Iftar (cek lokasi pasti di Naver Maps — biasanya restoran Korea halal-friendly di sekitar area Insadong/Gwanghwamun).</div>
+        <div class="tl-tags"><span class="tl-tag tag-transit">Jalan kaki / Subway singkat</span></div>
+      </div>
+      <div class="tl-item food">
+        <div class="tl-time">13:30 — 14:30</div>
+        <div class="tl-title">🍲 Makan Siang di Iftar — Makanan Korea</div>
+        <div class="tl-desc">Makan siang santai sambil masih pakai hanbok. Coba menu Korea favorit di sini.</div>
+        <div class="tl-tags"><span class="tl-tag tag-food">Makan Siang</span></div>
+      </div>
+      <div class="tl-item transit">
+        <div class="tl-time">14:30 — 15:00</div>
+        <div class="tl-title">🚶 Perjalanan ke Ikseondong Hanok Street</div>
+        <div class="tl-desc">Dari area Insadong/Gyeongbokgung jalan kaki atau naik subway ke Ikseondong Hanok Street (±10-15 menit dari Anguk Station, Line 3). Area ini penuh hanok yang sudah jadi cafe-cafe estetik.</div>
+        <div class="tl-tags"><span class="tl-tag tag-transit">Jalan kaki / Line 3 ke Anguk</span></div>
+      </div>
+      <div class="tl-item shop">
+        <div class="tl-time">15:00 — 17:30</div>
+        <div class="tl-title">☕ Ikseondong Hanok Street — Cafe Hopping</div>
+        <div class="tl-desc">Ikseondong penuh hanok tradisional yang diubah jadi cafe & resto modern dengan vibes unik. Cafe hopping sambil foto-foto dengan hanbok — lokasi yang sangat instagramable! Banyak pilihan cafe dengan tema berbeda-beda.</div>
+        <div class="tl-tags"><span class="tl-tag tag-sight">Cafe Hopping</span><span class="tl-tag tag-hanbok">Hanbok Spot</span></div>
+      </div>
+      <div class="tl-item food">
+        <div class="tl-time">17:30 — 19:00</div>
+        <div class="tl-title">🍽️ Makan Malam di Ikseondong Hanok</div>
+        <div class="tl-desc">Makan malam di salah satu resto hanok di Ikseondong. Banyak pilihan dari Korean fusion hingga tradisional, dengan suasana hanok yang khas.</div>
+        <div class="tl-tags"><span class="tl-tag tag-food">Makan Malam</span></div>
+      </div>
+      <div class="tl-item transit">
+        <div class="tl-time">19:00 — 19:30</div>
+        <div class="tl-title">🚌 Perjalanan ke Namsan Tower</div>
+        <div class="tl-desc">Dari Ikseondong/Anguk Station naik subway Line 3 ke Chungmuro Station, lalu transfer ke bus Namsan Sunhwan (남산순환버스) atau taxi singkat ke Namsan Tower. Pastikan kembalikan hanbok dulu sebelum batas waktu sewa jika perlu (cek jam tutup toko sewa).</div>
+        <div class="tl-tags"><span class="tl-tag tag-transit">Line 3 → Bus Namsan Sunhwan</span><span class="tl-tag tag-transit">±30 menit</span></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">19:30 — 21:30</div>
+        <div class="tl-title">🗼 Namsan Tower (N Seoul Tower)</div>
+        <div class="tl-desc">Nikmati city lights Seoul dari atas Namsan Tower di malam hari! Lihat love locks, foto-foto, dan suasana romantis kota Seoul yang berkilau. Area luar gratis, tiket observasi ±15,000 KRW jika mau naik ke atas.</div>
+        <div class="tl-tags"><span class="tl-tag tag-sight">Wisata</span><span class="tl-tag tag-free">Area luar GRATIS</span><span class="tl-tag tag-transit">Buka sampai 22:30</span></div>
+      </div>
+      <div class="tl-item transit">
+        <div class="tl-time">21:30 — 22:30</div>
+        <div class="tl-title">🏠 Pulang ke Penginapan</div>
+        <div class="tl-desc">Turun Namsan dengan bus ke Myeongdong, lalu naik Line 4 → transfer Euljiro 3-ga → Line 2 ke Seoul National Univ Station.</div>
+        <div class="tl-tags"><span class="tl-tag tag-transit">Bus → Line 4 → Line 2</span><span class="tl-tag tag-transit">±50 menit</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="day2-b" class="alt-content">
+    <div class="info-box purple"><span class="info-icon">🎵</span><p><strong>Alt B — Hanbok + HiKR Ground:</strong> Sama seperti Alt A untuk pagi-siang, tapi setelah cafe hopping di Ikseondong, mampir ke HiKR Ground (gratis, K-pop interaktif) sebelum lanjut ke Namsan Tower. Cocok kalau mau selingan kpop di tengah hari hanbok!</p></div>
+    <div class="timeline">
+      <div class="tl-item food">
+        <div class="tl-time">07:00 — 08:00</div>
+        <div class="tl-title">🍳 Sarapan & Siap-siap</div>
+        <div class="tl-desc">Sarapan di penginapan atau convenience store terdekat di Gwanak-gu.</div>
+        <div class="tl-tags"><span class="tl-tag tag-food">Sarapan</span></div>
+      </div>
+      <div class="tl-item transit">
+        <div class="tl-time">08:00 — 09:00</div>
+        <div class="tl-title">🚇 Perjalanan ke Gyeongbokgung (Sewa Hanbok)</div>
+        <div class="tl-desc">Line 2 → transfer Euljiro 3-ga → Line 3 ke Gyeongbokgung Station Exit 5. Sewa hanbok di Pink Hanbok (137-3 Sajik-ro, Jongno-gu) atau Daehan Hanbok.</div>
+        <div class="tl-tags"><span class="tl-tag tag-transit">Line 2 → Line 3</span><span class="tl-tag tag-transit">±55 menit</span><span class="tl-tag tag-hanbok">Sewa Hanbok</span></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">09:00 — 10:00</div>
+        <div class="tl-title">👘 Sewa & Pakai Hanbok</div>
+        <div class="tl-desc">Pilih dan pakai hanbok, siap untuk explore istana.</div>
+        <div class="tl-tags"><span class="tl-tag tag-hanbok">Hanbok Rental</span></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">10:00 — 12:30</div>
+        <div class="tl-title">🏯 Gyeongbokgung Palace & National Folk Museum (+ Bukchon)</div>
+        <div class="tl-desc">Masuk GRATIS dengan hanbok! Explore istana, museum, dan kalau sempat lanjut ke Bukchon Hanok Village untuk foto tambahan.</div>
+        <div class="tl-tags"><span class="tl-tag tag-sight">Wisata</span><span class="tl-tag tag-free">GRATIS dengan Hanbok</span></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">12:30 — 13:00</div>
+        <div class="tl-title">📸 Explore & Foto-foto</div>
+        <div class="tl-desc">Sesi foto santai dengan hanbok sebelum makan siang.</div>
+        <div class="tl-tags"><span class="tl-tag tag-hanbok">Foto Session</span></div>
+      </div>
+      <div class="tl-item transit">
+        <div class="tl-time">13:00 — 13:30</div>
+        <div class="tl-title">🚶 Perjalanan ke Iftar</div>
+        <div class="tl-desc">Jalan kaki atau subway singkat ke restoran Iftar di sekitar area Gyeongbokgung/Insadong.</div>
+        <div class="tl-tags"><span class="tl-tag tag-transit">Jalan kaki / Subway singkat</span></div>
+      </div>
+      <div class="tl-item food">
+        <div class="tl-time">13:30 — 14:30</div>
+        <div class="tl-title">🍲 Makan Siang di Iftar — Makanan Korea</div>
+        <div class="tl-desc">Makan siang santai dengan menu Korea favorit.</div>
+        <div class="tl-tags"><span class="tl-tag tag-food">Makan Siang</span></div>
+      </div>
+      <div class="tl-item transit">
+        <div class="tl-time">14:30 — 15:00</div>
+        <div class="tl-title">🚶 Perjalanan ke Ikseondong Hanok Street</div>
+        <div class="tl-desc">Jalan kaki/subway ke Ikseondong, dekat Anguk Station Line 3.</div>
+        <div class="tl-tags"><span class="tl-tag tag-transit">Jalan kaki / Line 3 Anguk</span></div>
+      </div>
+      <div class="tl-item shop">
+        <div class="tl-time">15:00 — 17:00</div>
+        <div class="tl-title">☕ Ikseondong Hanok Street — Cafe Hopping</div>
+        <div class="tl-desc">Cafe hopping dengan hanbok di Ikseondong yang penuh hanok aesthetic.</div>
+        <div class="tl-tags"><span class="tl-tag tag-sight">Cafe Hopping</span><span class="tl-tag tag-hanbok">Hanbok Spot</span></div>
+      </div>
+      <div class="tl-item transit">
+        <div class="tl-time">17:00 — 17:20</div>
+        <div class="tl-title">🚶 Jalan Kaki ke HiKR Ground</div>
+        <div class="tl-desc">Dari Ikseondong/Anguk area jalan kaki atau subway singkat ke HiKR Ground (40 Cheonggyecheon-ro, Jung-gu). Sebelum masuk, kembalikan hanbok kalau sudah lewat batas waktu sewa.</div>
+        <div class="tl-tags"><span class="tl-tag tag-transit">Jalan kaki ±15-20 menit</span></div>
+      </div>
+      <div class="tl-item kpop">
+        <div class="tl-time">17:20 — 19:00</div>
+        <div class="tl-title">🎵 HiKR Ground — GRATIS!</div>
+        <div class="tl-desc">5 lantai pengalaman K-Pop & budaya Korea interaktif. GRATIS masuk! Catatan: TUTUP setiap hari Senin — cek dulu jadwal sebelum berangkat, kalau tutup bisa diganti makan malam santai di Ikseondong/Myeongdong.</div>
+        <div class="tl-tags"><span class="tl-tag tag-kpop">K-Pop</span><span class="tl-tag tag-free">GRATIS</span><span class="tl-tag tag-event">Cek jadwal — Tutup Senin</span></div>
+      </div>
+      <div class="tl-item food">
+        <div class="tl-time">19:00 — 20:00</div>
+        <div class="tl-title">🍽️ Makan Malam di Ikseondong / Myeongdong</div>
+        <div class="tl-desc">Makan malam di Ikseondong Hanok Street atau lanjut ke Myeongdong yang dekat dengan HiKR Ground.</div>
+        <div class="tl-tags"><span class="tl-tag tag-food">Makan Malam</span></div>
+      </div>
+      <div class="tl-item transit">
+        <div class="tl-time">20:00 — 20:30</div>
+        <div class="tl-title">🚌 Perjalanan ke Namsan Tower</div>
+        <div class="tl-desc">Dari Myeongdong naik bus Namsan Sunhwan ke Namsan Tower.</div>
+        <div class="tl-tags"><span class="tl-tag tag-transit">Bus Namsan Sunhwan</span></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">20:30 — 22:00</div>
+        <div class="tl-title">🗼 Namsan Tower — City Lights Malam</div>
+        <div class="tl-desc">Nikmati pemandangan kota Seoul yang berkilau di malam hari.</div>
+        <div class="tl-tags"><span class="tl-tag tag-sight">Wisata</span><span class="tl-tag tag-free">Area luar GRATIS</span></div>
+      </div>
+      <div class="tl-item transit">
+        <div class="tl-time">22:00 — 23:00</div>
+        <div class="tl-title">🏠 Pulang ke Penginapan</div>
+        <div class="tl-desc">Bus dari Namsan ke Myeongdong → Line 4 → transfer Euljiro 3-ga → Line 2 ke Seoul National Univ Station. Subway terakhir sekitar 01:00, masih aman!</div>
+        <div class="tl-tags"><span class="tl-tag tag-transit">Bus → Line 4 → Line 2</span><span class="tl-tag tag-transit">±50 menit</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DAY 3: 17 Juni -->
+<div id="day-day3" class="day-section">
+  <div class="day-header" style="background: linear-gradient(135deg, #00BBD6, #9B5DE5);">
+    <div class="day-num">3</div>
+    <div><h2>Selasa, 17 Juni</h2><p>Starfield Library · COEX · K-Star Road · Gangnam · Han River</p></div>
+    <div class="day-type-badge">Gangnam Day</div>
+  </div>
+
+  <div class="info-box purple">
+    <span class="info-icon">💡</span>
+    <p><strong>Hari Gangnam!</strong> Semua destinasi di hari ini berada di area Gangnam-gu yang bisa dijangkau dengan Line 2. Dari penginapan ke Samseong Station langsung!</p>
+  </div>
+
+  <div class="alt-tabs">
+    <button class="alt-btn pink active" onclick="showAlt('day3','a',this)">⭐ Alt A — COEX + K-Star + Han River</button>
+    <button class="alt-btn purple" onclick="showAlt('day3','b',this)">🎵 Alt B — COEX + SM Building + Apgujeong</button>
+    <button class="alt-btn teal" onclick="showAlt('day3','c',this)">🛒 Alt C — COEX + Gangnam Shopping</button>
+  </div>
+
+  <div id="day3-a" class="alt-content active">
+    <div class="info-box pink"><span class="info-icon">🌟</span><p><strong>Alt A — Rekomendasi Utama:</strong> COEX (Starfield Library + Ktown4u) → K-Star Road (kpop statues) → Gangnam Statue → Han River Banpo/Ttukseom malam. Semua di area Gangnam!</p></div>
+    <div class="timeline">
+      <div class="tl-item transit">
+        <div class="tl-time">10:00 — BERANGKAT</div>
+        <div class="tl-title">🏠 Transit ke COEX Gangnam</div>
+        <div class="tl-desc">Line 2 hijau dari Seoul National Univ langsung ke Samseong Station (삼성역). Tidak perlu transfer! Keluar Exit 5 atau 6 langsung ke COEX Mall.</div>
+        <div class="tl-tags"><span class="tl-tag tag-transit">Line 2 Direct — Samseong Stn</span><span class="tl-tag tag-transit">±35 menit</span><span class="tl-tag tag-transit">±1,650 KRW</span></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">10:35 — 12:00</div>
+        <div class="tl-title">📚 Starfield Library — COEX Mall</div>
+        <div class="tl-desc">Langsung masuk ke Starfield Library yang iconic! Perpustakaan 2 lantai di dalam COEX Mall dengan rak buku raksasa yang estetik. Ada Starbucks di dalam. Buka dari 10:30! Foto-foto dulu, gratis masuk.</div>
+        <div class="tl-tags"><span class="tl-tag tag-sight">Wisata</span><span class="tl-tag tag-free">GRATIS</span><span class="tl-tag tag-transit">Buka 10:30-22:00</span></div>
+      </div>
+      <div class="tl-item kpop">
+        <div class="tl-time">12:00 — 13:00</div>
+        <div class="tl-title">💿 Ktown4u COEX — Album & Merch</div>
+        <div class="tl-desc">Di dalam COEX Mall. Rating 5.0/5! Harga album terjangkau, koleksi lengkap termasuk album lama. Beli album, merch official. Staff ramah dan bisa bahasa Inggris!</div>
+        <div class="tl-tags"><span class="tl-tag tag-kpop">K-Pop</span><span class="tl-tag tag-shop">Jastip</span><span class="tl-tag tag-transit">Buka 11:00-20:00</span></div>
+      </div>
+      <div class="tl-item food">
+        <div class="tl-time">13:00 — 14:00</div>
+        <div class="tl-title">🍽️ Makan Siang di COEX Food Court</div>
+        <div class="tl-desc">Food court di COEX ada banyak pilihan. Atau keluar ke Gangnam-daero yang penuh restoran. Coba Korean BBQ makan siang (lebih murah dari malam) atau kimbap/gimbap ±4,000 KRW.</div>
+        <div class="tl-tags"><span class="tl-tag tag-food">Makan Siang</span></div>
+      </div>
+      <div class="tl-item kpop">
+        <div class="tl-time">14:00 — 15:30</div>
+        <div class="tl-title">🐻 K-Star Road + Gangnam Idol Statue</div>
+        <div class="tl-desc">Dari COEX jalan ±15 menit ke K-Star Road (Apgujeong-dong arah). Patung-patung karakter kpop berbentuk beruang (GD, EXO, SHINee, dll!) sepanjang jalan ±1.5 km. Di depan COEX juga ada Gangnam Idol Statue (outdoor)!</div>
+        <div class="tl-tags"><span class="tl-tag tag-kpop">K-Pop</span><span class="tl-tag tag-free">GRATIS</span><span class="tl-tag tag-sight">Open 24 Jam</span></div>
+      </div>
+      <div class="tl-item transit">
+        <div class="tl-time">16:00 — 16:20</div>
+        <div class="tl-title">🚇 Transit ke Han River</div>
+        <div class="tl-desc">Dari COEX naik subway Line 2 ke Ttukseom Station (뚝섬역), jalan ±10 menit ke Ttukseom Hangang Park. Atau naik bus ke Banpo Hangang Park untuk malam hari.</div>
+        <div class="tl-tags"><span class="tl-tag tag-transit">Line 2 ke Ttukseom</span></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">16:20 — 19:30</div>
+        <div class="tl-title">🌊 Han River — Piknik & Sunset</div>
+        <div class="tl-desc">Beli makanan di convenience store tepi sungai (ramyeon, kimbap, chicken, beer — walaupun kita budget-minded, snack murah tersedia). Sunset jam 20:00an. Area Ttukseom populer untuk picnic. Sewa sepeda juga bisa!</div>
+        <div class="tl-tags"><span class="tl-tag tag-sight">Han River</span><span class="tl-tag tag-free">GRATIS</span></div>
+      </div>
+      <div class="tl-item transit">
+        <div class="tl-time">19:30 — 20:30</div>
+        <div class="tl-title">🏠 Pulang ke Gwanak-gu</div>
+        <div class="tl-desc">Ttukseom Station Line 2 langsung ke Seoul National Univ Station!</div>
+        <div class="tl-tags"><span class="tl-tag tag-transit">Line 2 Direct</span><span class="tl-tag tag-transit">±25 menit</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="day3-b" class="alt-content">
+    <div class="info-box purple"><span class="info-icon">🎵</span><p><strong>Alt B — COEX + SM Building + Apgujeong Rodeo:</strong> Tambah SM Entertainment (yang baru ada di SM Museum di COEX Artium!) dan Apgujeong yang terkenal di lagu SEVENTEEN!</p></div>
+    <div class="timeline">
+      <div class="tl-item transit">
+        <div class="tl-time">10:00</div><div class="tl-title">🏠 Transit ke COEX (Line 2 → Samseong)</div>
+        <div class="tl-desc">Line 2 dari Seoul Nat'l Univ langsung ke Samseong Station Exit 5/6. ±35 menit.</div>
+        <div class="tl-tags"><span class="tl-tag tag-transit">Line 2 Direct</span><span class="tl-tag tag-transit">±35 menit</span></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">10:35 — 11:30</div>
+        <div class="tl-title">📚 Starfield Library</div>
+        <div class="tl-desc">Foto-foto di library iconic ini. Ambil banyak foto karena ini spot paling hits di Seoul untuk Instagram!</div>
+        <div class="tl-tags"><span class="tl-tag tag-sight">Wisata</span><span class="tl-tag tag-free">GRATIS</span></div>
+      </div>
+      <div class="tl-item kpop">
+        <div class="tl-time">11:30 — 13:00</div>
+        <div class="tl-title">💿 Ktown4u + SM Store di COEX</div>
+        <div class="tl-desc">Ktown4u untuk album, lalu ke COEX Artium (area SM Entertainment di COEX) — ada SM Museum/exhibition. Explore area ini untuk kpop fans!</div>
+        <div class="tl-tags"><span class="tl-tag tag-kpop">K-Pop</span><span class="tl-tag tag-shop">Jastip</span></div>
+      </div>
+      <div class="tl-item food">
+        <div class="tl-time">13:00 — 14:00</div>
+        <div class="tl-title">🍱 Makan Siang</div>
+        <div class="tl-desc">Makan di sekitar COEX atau jalan ke area Gangnam-daero.</div>
+        <div class="tl-tags"><span class="tl-tag tag-food">Makan</span></div>
+      </div>
+      <div class="tl-item kpop">
+        <div class="tl-time">14:00 — 16:00</div>
+        <div class="tl-title">🎤 K-Star Road + SM Building Lama</div>
+        <div class="tl-desc">K-Star Road untuk foto patung kpop. Lalu pergi ke SM Entertainment building lama di Cheongdam (naik bus atau ojek). Foto-foto di depan building legendaris ini!</div>
+        <div class="tl-tags"><span class="tl-tag tag-kpop">K-Pop</span><span class="tl-tag tag-free">GRATIS lihat luar</span></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">16:00 — 18:00</div>
+        <div class="tl-title">🛍️ Apgujeong Rodeo Street</div>
+        <div class="tl-desc">Jalan kaki atau bus ke Apgujeong Rodeo — wilayah high-end tapi seru untuk jalan-jalan. Cafe aesthetic, fashion, celebrity sighting! Naik subway Line 3 ke Apgujeong Station.</div>
+        <div class="tl-tags"><span class="tl-tag tag-sight">Wisata</span><span class="tl-tag tag-shop">Explore</span></div>
+      </div>
+      <div class="tl-item transit">
+        <div class="tl-time">18:30</div>
+        <div class="tl-title">🏠 Pulang ke Gwanak-gu</div>
+        <div class="tl-desc">Apgujeong Stn Line 3 → Transfer ke Line 2 di Euljiro 3-ga → Seoul National Univ. ±55 menit.</div>
+        <div class="tl-tags"><span class="tl-tag tag-transit">Line 3 → Line 2</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="day3-c" class="alt-content">
+    <div class="info-box teal"><span class="info-icon">🛒</span><p><strong>Alt C — COEX + Gangnam Shopping:</strong> Fokus belanja dan jastip di area Gangnam. COEX → Seoul Forest (Seoul Foresst store buat jastip!) → Seongsu area.</p></div>
+    <div class="timeline">
+      <div class="tl-item transit"><div class="tl-time">10:00</div><div class="tl-title">🏠 Transit ke COEX (Line 2 → Samseong)</div><div class="tl-desc">±35 menit via Line 2 langsung.</div><div class="tl-tags"><span class="tl-tag tag-transit">±35 menit</span></div></div>
+      <div class="tl-item">
+        <div class="tl-time">10:35 — 12:00</div>
+        <div class="tl-title">📚 Starfield Library + Ktown4u</div>
+        <div class="tl-desc">Foto di Starfield Library, belanja album di Ktown4u COEX.</div>
+        <div class="tl-tags"><span class="tl-tag tag-sight">Wisata</span><span class="tl-tag tag-kpop">K-Pop</span></div>
+      </div>
+      <div class="tl-item kpop">
+        <div class="tl-time">12:00 — 13:30</div>
+        <div class="tl-title">🐻 K-Star Road Gangnam</div>
+        <div class="tl-desc">Jalan ke K-Star Road, foto semua patung kpop. Gratis dan seru!</div>
+        <div class="tl-tags"><span class="tl-tag tag-kpop">K-Pop</span><span class="tl-tag tag-free">GRATIS</span></div>
+      </div>
+      <div class="tl-item transit">
+        <div class="tl-time">14:00 — 14:30</div>
+        <div class="tl-title">🚇 Transit ke Seongsu</div>
+        <div class="tl-desc">Dari Samseong Station Line 2 ke Seongsu Station (성수역). ±20 menit.</div>
+        <div class="tl-tags"><span class="tl-tag tag-transit">Line 2 ke Seongsu</span></div>
+      </div>
+      <div class="tl-item shop">
+        <div class="tl-time">14:30 — 17:00</div>
+        <div class="tl-title">🎡 Seongsu — Toy Story Popup + Seoul Forest Store</div>
+        <div class="tl-desc">Area Seongsu super trendi! Cari Toy Story Popup di sekitar Seongsu (cek lokasi pasti di Naver Maps). Seoul Forest store juga di sini. Banyak cafe dan concept store unik. Kalau Seoul Forest mau masuk taman, gratis!</div>
+        <div class="tl-tags"><span class="tl-tag tag-shop">Jastip</span><span class="tl-tag tag-sight">Seongsu Vibes</span></div>
+      </div>
+      <div class="tl-item transit">
+        <div class="tl-time">17:30</div>
+        <div class="tl-title">🏠 Pulang ke Gwanak-gu</div>
+        <div class="tl-desc">Seongsu Station Line 2 → Hongik Univ atau langsung ke Seoul Nat'l Univ. ±30 menit.</div>
+        <div class="tl-tags"><span class="tl-tag tag-transit">Line 2 Direct</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DAY 4: 18 Juni -->
+<div id="day-day4" class="day-section">
+  <div class="day-header" style="background: linear-gradient(135deg, #F7B731, #FF6B9D);">
+    <div class="day-num">4</div>
+    <div><h2>Rabu, 18 Juni</h2><p>Mangwon Market + STELLA LOVERS CLUB EVENT (11:30-18:30)</p></div>
+    <div class="day-type-badge">⭐ Event Day!</div>
+  </div>
+
+  <div class="info-box gold">
+    <span class="info-icon">🌙</span>
+    <p><strong>EVENT HARI INI:</strong> Stella Lovers Club — 18-19 Juni 2026, jam 11:30-18:30 di <strong>Cafe Mellang (Pink Moon), Basement Floor, 11 Wausan-ro 29ra-gil, Mapo-gu, Seoul (Hongdae area)</strong>. Prioritaskan event ini! Mangwon Market juga dekat Hongdae jadi bisa sejalur pagi hari.</p>
+  </div>
+
+  <div class="alt-tabs">
+    <button class="alt-btn pink active" onclick="showAlt('day4','a',this)">🌙 Alt A — Mangwon + Stella Event + Busking</button>
+    <button class="alt-btn purple" onclick="showAlt('day4','b',this)">🎵 Alt B — Mangwon + Stella + K-Pop Stores</button>
+    <button class="alt-btn teal" onclick="showAlt('day4','c',this)">🛒 Alt C — Stella Event + Hongdae Full Day</button>
+  </div>
+
+  <div id="day4-a" class="alt-content active">
+    <div class="info-box pink"><span class="info-icon">💜</span><p><strong>Alt A — Rekomendasi untuk 18 Juni:</strong> Mangwon Market pagi (dekat Hongdae!), lalu Stella Lovers Club event siang, malam Hongdae busking. Semua di area Mapo-gu yang sama!</p></div>
+    <div class="timeline">
+      <div class="tl-item transit">
+        <div class="tl-time">09:00 — BERANGKAT</div>
+        <div class="tl-title">🏠 Transit ke Mangwon Market</div>
+        <div class="tl-desc">Line 2 dari Seoul Nat'l Univ → Hongik Univ Station (홍대입구역), lalu transfer ke Line 6 (coklat) ke Mangwon Station (망원역) Exit 2. Atau jalan kaki ±20 menit dari Hongdae.</div>
+        <div class="tl-tags"><span class="tl-tag tag-transit">Line 2 → Line 6 Mangwon</span><span class="tl-tag tag-transit">±40 menit</span></div>
+        <div class="transit-card">
+          <strong>Rute Detail:</strong>
+          <div class="transit-steps">
+            <div class="transit-step">🟢 Line 2 Seoul Nat'l Univ</div>
+            <span class="transit-arr">→</span>
+            <div class="transit-step">Hongik Univ Station</div>
+            <span class="transit-arr">→</span>
+            <div class="transit-step">🟤 Line 6 ke Mangwon Stn</div>
+            <span class="transit-arr">→</span>
+            <div class="transit-step">Exit 2 (ke pasar)</div>
+          </div>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">09:45 — 11:00</div>
+        <div class="tl-title">🥩 Mangwon Market — Sarapan / Jajanan!</div>
+        <div class="tl-desc">Pasar lokal otentik. Wajib coba: Croquette (kroket Mangwon yang terkenal!), tteokbokki, sushi dalam pasar, jus buah segar. Budget ±5,000-8,000 KRW. Bukan pasar turis, harga sangat terjangkau!</div>
+        <div class="tl-tags"><span class="tl-tag tag-sight">Wisata</span><span class="tl-tag tag-food">Jajanan</span><span class="tl-tag tag-free">Budget Friendly</span></div>
+      </div>
+      <div class="tl-item transit">
+        <div class="tl-time">11:00 — 11:20</div>
+        <div class="tl-title">🚶 Jalan / Bus ke Cafe Mellang (Pink Moon)</div>
+        <div class="tl-desc">Dari Mangwon ke Cafe Mellang (11 Wausan-ro 29ra-gil, Mapo-gu). Jarak ±1.5 km dari Mangwon Station. Naik bus atau ojek/taxi singkat. Atau subway Line 6 kembali ke Sangsu Station lalu jalan.</div>
+        <div class="tl-tags"><span class="tl-tag tag-transit">Bus / Jalan kaki ±20 menit</span></div>
+      </div>
+      <div class="tl-item event">
+        <div class="tl-time">11:30 — 18:30</div>
+        <div class="tl-title">🌙 STELLA LOVERS CLUB EVENT — Cafe Mellang Pink Moon</div>
+        <div class="tl-desc">Event selama 7 jam di Cafe Mellang, Basement Floor! 11 Wausan-ro 29ra-gil, Mapo-gu. Ini adalah fan event yang tidak boleh dilewatkan jika kamu fans Stella! Manfaatkan semaksimal mungkin. Makan & minum di cafe selama event.</div>
+        <div class="tl-tags"><span class="tl-tag tag-event">Event Special</span><span class="tl-tag tag-kpop">K-Pop Fan Event</span></div>
+      </div>
+      <div class="tl-item food">
+        <div class="tl-time">18:30 — 19:30</div>
+        <div class="tl-title">🍗 Makan Malam Hongdae Area</div>
+        <div class="tl-desc">Setelah event, makan malam di Hongdae. Banyak pilihan: Papa Johns (di Hongdae!), Korean BBQ, chicken & beer (chimaek), atau ramen. Budget ±15,000-20,000 KRW.</div>
+        <div class="tl-tags"><span class="tl-tag tag-food">Makan Malam</span></div>
+      </div>
+      <div class="tl-item kpop">
+        <div class="tl-time">19:30 — 21:30</div>
+        <div class="tl-title">🎤 Hongdae Busking Night!</div>
+        <div class="tl-desc">Dari Cafe Mellang jalan ±10 menit ke area Hongdae main street. Busking malam hari di Hongdae sangat ramai dan seru! Area: depan Hongik Univ Exit 9, Hongdae Club Area. Berbagai penampilan dari penyanyi solo, dance cover K-Pop, band indie.</div>
+        <div class="tl-tags"><span class="tl-tag tag-kpop">Busking</span><span class="tl-tag tag-free">GRATIS</span></div>
+      </div>
+      <div class="tl-item transit">
+        <div class="tl-time">21:30 — 22:15</div>
+        <div class="tl-title">🏠 Pulang ke Gwanak-gu</div>
+        <div class="tl-desc">Hongik Univ Station Line 2 (hijau) langsung ke Seoul National Univ Station!</div>
+        <div class="tl-tags"><span class="tl-tag tag-transit">Line 2 Direct</span><span class="tl-tag tag-transit">±30 menit</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="day4-b" class="alt-content">
+    <div class="info-box purple"><span class="info-icon">🎵</span><p><strong>Alt B — Event + K-Pop Store Hongdae:</strong> Sama dengan Alt A, tapi setelah event mampir ke K-Pop stores dulu sebelum busking. With MuU, Kpop Friends, K-Mecca semua ada di Hongdae!</p></div>
+    <div class="timeline">
+      <div class="tl-item transit"><div class="tl-time">09:00</div><div class="tl-title">🏠 Transit ke Mangwon</div><div class="tl-desc">Line 2 → Hongik Univ → Line 6 → Mangwon Stn Exit 2.</div><div class="tl-tags"><span class="tl-tag tag-transit">±40 menit</span></div></div>
+      <div class="tl-item"><div class="tl-time">09:45 — 11:00</div><div class="tl-title">🥩 Mangwon Market — Sarapan Lokal</div><div class="tl-desc">Kroket legendary Mangwon + jajanan lainnya. Budget ±5,000-8,000 KRW.</div><div class="tl-tags"><span class="tl-tag tag-food">Sarapan</span><span class="tl-tag tag-sight">Pasar Lokal</span></div></div>
+      <div class="tl-item event">
+        <div class="tl-time">11:30 — 18:30</div>
+        <div class="tl-title">🌙 STELLA LOVERS CLUB — Cafe Mellang</div>
+        <div class="tl-desc">Event di Basement Cafe Mellang, 11 Wausan-ro 29ra-gil. 7 jam event! Nikmati sepenuhnya.</div>
+        <div class="tl-tags"><span class="tl-tag tag-event">Event Special</span><span class="tl-tag tag-kpop">K-Pop</span></div>
+      </div>
+      <div class="tl-item kpop">
+        <div class="tl-time">18:30 — 20:30</div>
+        <div class="tl-title">🎵 K-Pop Stores di Hongdae</div>
+        <div class="tl-desc">Explore setelah event: With MuU (AK Plaza Lt 2 — album & lightstick), Playduck (depan AK Plaza), K-Mecca (poca, clearfile, kartu), Kpop Friends. Semuanya dalam jarak jalan kaki di Hongdae!</div>
+        <div class="tl-tags"><span class="tl-tag tag-kpop">K-Pop Shopping</span><span class="tl-tag tag-shop">Jastip</span></div>
+      </div>
+      <div class="tl-item food">
+        <div class="tl-time">20:30 — 21:15</div>
+        <div class="tl-title">🍜 Makan Malam Hongdae</div>
+        <div class="tl-desc">Makan di Hongdae sambil melihat busking malam!</div>
+        <div class="tl-tags"><span class="tl-tag tag-food">Makan Malam</span></div>
+      </div>
+      <div class="tl-item transit"><div class="tl-time">21:30</div><div class="tl-title">🏠 Pulang via Line 2</div><div class="tl-desc">Hongik Univ Station → Seoul National Univ Station. ±30 menit.</div><div class="tl-tags"><span class="tl-tag tag-transit">Line 2 Direct</span></div></div>
+    </div>
+  </div>
+
+  <div id="day4-c" class="alt-content">
+    <div class="info-box teal"><span class="info-icon">🛒</span><p><strong>Alt C — Full Hongdae Day:</strong> Kalau tidak ada yang urgent di Mangwon, langsung ke Hongdae dari pagi untuk explore lebih banyak sambil tunggu event siang!</p></div>
+    <div class="timeline">
+      <div class="tl-item transit"><div class="tl-time">09:30</div><div class="tl-title">🏠 Transit ke Hongdae</div><div class="tl-desc">Line 2 langsung ke Hongik Univ Station Exit 9.</div><div class="tl-tags"><span class="tl-tag tag-transit">Line 2 Direct ±30 menit</span></div></div>
+      <div class="tl-item kpop">
+        <div class="tl-time">10:00 — 11:20</div>
+        <div class="tl-title">🎵 Explore Hongdae K-Pop Stores Pagi</div>
+        <div class="tl-desc">Pagi hari lebih sepi, belanja nyaman! With MuU, K-Mecca, Playduck. Sekalian ngantri atau cari info Stella event.</div>
+        <div class="tl-tags"><span class="tl-tag tag-kpop">K-Pop</span><span class="tl-tag tag-shop">Jastip</span></div>
+      </div>
+      <div class="tl-item event">
+        <div class="tl-time">11:30 — 18:30</div>
+        <div class="tl-title">🌙 STELLA LOVERS CLUB — Cafe Mellang Pink Moon</div>
+        <div class="tl-desc">Event 7 jam di Cafe Mellang Basement. Nikmati sampai selesai!</div>
+        <div class="tl-tags"><span class="tl-tag tag-event">Event Special</span><span class="tl-tag tag-kpop">K-Pop Fan Event</span></div>
+      </div>
+      <div class="tl-item food">
+        <div class="tl-time">18:30 — 19:30</div>
+        <div class="tl-title">🍗 Dinner Hongdae — Papa Johns!</div>
+        <div class="tl-desc">Papa Johns ada di Hongdae! Setelah event bisa sekalian makan di sini. Atau street food Hongdae yang murah.</div>
+        <div class="tl-tags"><span class="tl-tag tag-food">Makan</span></div>
+      </div>
+      <div class="tl-item kpop">
+        <div class="tl-time">19:30 — 21:30</div>
+        <div class="tl-title">🎤 Hongdae Busking + Myeongdong Busking (opsional)</div>
+        <div class="tl-desc">Busking Hongdae malam, atau kalau masih kuat ke Myeongdong juga ada busking street performer di Myeongdong-gil!</div>
+        <div class="tl-tags"><span class="tl-tag tag-kpop">Busking</span><span class="tl-tag tag-free">GRATIS</span></div>
+      </div>
+      <div class="tl-item transit"><div class="tl-time">22:00</div><div class="tl-title">🏠 Pulang — Line 2</div><div class="tl-desc">Hongik Univ → Seoul National Univ Station. Subway terakhir sekitar jam 01:00!</div><div class="tl-tags"><span class="tl-tag tag-transit">Line 2 Direct</span></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- DAY 5: 19 Juni -->
+<div id="day-day5" class="day-section">
+  <div class="day-header" style="background: linear-gradient(135deg, #9B5DE5, #534AB7);">
+    <div class="day-num">5</div>
+    <div><h2>Kamis, 19 Juni</h2><p>⭐ FULL K-POP DAY! HYBE + Hongdae + Hoshi Birthday Event</p></div>
+    <div class="day-type-badge">💜 Full KPop</div>
+  </div>
+
+  <div class="info-box gold">
+    <span class="info-icon">🎂</span>
+    <p><strong>HARI INI ADA 2 EVENT:</strong><br>1. Stella Lovers Club masih berlanjut (Cafe Mellang, 11:30-18:30)<br>2. <strong>Hoshi (SEVENTEEN) Birthday Party — Cafe 2734, 2F 34 Wausan-ro 27-gil, Mapo-gu, Seoul — JAM 18:00</strong><br>Kedua lokasi ada di area Hongdae/Mapo-gu!</p>
+  </div>
+
+  <div class="alt-tabs">
+    <button class="alt-btn pink active" onclick="showAlt('day5','a',this)">💜 Alt A — HYBE + Stella + Hoshi Bday</button>
+    <button class="alt-btn purple" onclick="showAlt('day5','b',this)">🎵 Alt B — Hongdae KPop + Stella + Hoshi</button>
+    <button class="alt-btn teal" onclick="showAlt('day5','c',this)">🗺️ Alt C — Area Yongsan + HYBE + Hoshi</button>
+  </div>
+
+  <div id="day5-a" class="alt-content active">
+    <div class="timeline">
+      <div class="tl-item transit">
+        <div class="tl-time">09:00 — BERANGKAT</div>
+        <div class="tl-title">🏠 Transit ke HYBE Building (Yongsan)</div>
+        <div class="tl-desc">Line 2 dari Seoul Nat'l Univ → Transfer di Dongjakdaero ke Line 4 → Sinchon Stn → transfer ke Line 2 lagi → atau alternative: Line 2 → transfer di Sindorim → ke HYBE. Cara paling mudah: Line 4 ke Seoul Station → Transfer Line 1 ke Yongsan Stn (용산역) Exit 4.</div>
+        <div class="tl-tags"><span class="tl-tag tag-transit">Line 2 → Line 4 → Yongsan Stn</span><span class="tl-tag tag-transit">±50 menit</span></div>
+        <div class="transit-card">
+          <strong>Rute Detail ke HYBE:</strong>
+          <div class="transit-steps">
+            <div class="transit-step">🟢 Line 2 Seoul Nat'l Univ</div>
+            <span class="transit-arr">→</span>
+            <div class="transit-step">Transfer Sindorim</div>
+            <span class="transit-arr">→</span>
+            <div class="transit-step">🔵 Line 1 ke Seoul Station</div>
+            <span class="transit-arr">→</span>
+            <div class="transit-step">🔵 Line 1 ke Yongsan Stn</div>
+            <span class="transit-arr">→</span>
+            <div class="transit-step">Exit 4, jalan ±5 menit</div>
+          </div>
+        </div>
+      </div>
+      <div class="tl-item kpop">
+        <div class="tl-time">10:00 — 12:00</div>
+        <div class="tl-title">🏢 HYBE Headquarters — Area Yongsan</div>
+        <div class="tl-desc">Foto di depan gedung HYBE yang iconic (42 Hangang-daero, Yongsan). Gedung besar dan modern! Perlu reservasi untuk masuk HYBE INSIGHT (museum interaktif BTS). Cek availability terlebih dahulu — bisa book online via Weverse. Kalau tidak bisa masuk, foto di luar tetap worth it!</div>
+        <div class="tl-tags"><span class="tl-tag tag-kpop">K-Pop Landmark</span><span class="tl-tag tag-transit">Buka Senin-Jumat</span></div>
+      </div>
+      <div class="tl-item food">
+        <div class="tl-time">12:00 — 13:00</div>
+        <div class="tl-title">🍱 Makan Siang Area Yongsan / Itaewon</div>
+        <div class="tl-desc">Yongsan dekat Itaewon! Banyak pilihan makanan halal dan international di Itaewon. Atau makan Korean food di area Yongsan Station.</div>
+        <div class="tl-tags"><span class="tl-tag tag-food">Makan Siang</span></div>
+      </div>
+      <div class="tl-item transit">
+        <div class="tl-time">13:00 — 13:40</div>
+        <div class="tl-title">🚇 Transit ke Hongdae</div>
+        <div class="tl-desc">Dari Yongsan Station Line 1 → Sinchon Station (신촌역) → Transfer atau jalan ke Hongik Univ area. Atau: Yongsan → Line 6 → Sangsu → Hongdae area.</div>
+        <div class="tl-tags"><span class="tl-tag tag-transit">Line 1 → Sinchon / Hongdae area</span><span class="tl-tag tag-transit">±40 menit</span></div>
+      </div>
+      <div class="tl-item kpop">
+        <div class="tl-time">14:00 — 17:30</div>
+        <div class="tl-title">🎵 Hongdae K-Pop Store Haul + Stella Event (Opsional)</div>
+        <div class="tl-desc">K-Pop stores di Hongdae: With MuU (AK Plaza Lt 2), Playduck (depan AK Plaza), K-Mecca, Kpop Friends. Kalau mau singgah Stella event lagi jam 14:00-18:00 di Cafe Mellang (masih buka sampai 18:30)!</div>
+        <div class="tl-tags"><span class="tl-tag tag-kpop">K-Pop Shopping</span><span class="tl-tag tag-shop">Jastip</span></div>
+      </div>
+      <div class="tl-item event">
+        <div class="tl-time">17:45 — 18:00</div>
+        <div class="tl-title">🚶 Jalan ke Cafe 2734 (Hoshi Birthday)</div>
+        <div class="tl-desc">Dari area Hongdae main street ke Cafe 2734 (2F, 34 Wausan-ro 27-gil, Mapo-gu) jalan kaki ±10-15 menit. Cek di Naver Maps arah pastinya!</div>
+        <div class="tl-tags"><span class="tl-tag tag-transit">Jalan kaki ±15 menit</span></div>
+      </div>
+      <div class="tl-item event">
+        <div class="tl-time">18:00 — selesai</div>
+        <div class="tl-title">🎂 HOSHI (SVT) BIRTHDAY PARTY — Cafe 2734!</div>
+        <div class="tl-desc">Birthday fan cafe untuk Hoshi SEVENTEEN di Cafe 2734, lantai 2, 34 Wausan-ro 27-gil, Mapo-gu. Jam mulai 18:00! Cek info event terlebih dahulu (biasanya perlu reservasi atau ada syarat tertentu dari penyelenggara).</div>
+        <div class="tl-tags"><span class="tl-tag tag-event">Birthday Event</span><span class="tl-tag tag-kpop">SEVENTEEN Fan</span></div>
+      </div>
+      <div class="tl-item transit">
+        <div class="tl-time">Setelah event</div>
+        <div class="tl-title">🏠 Pulang ke Gwanak-gu</div>
+        <div class="tl-desc">Dari area Wausan-ro ke Hongik Univ Station, naik Line 2 langsung ke Seoul National Univ Station.</div>
+        <div class="tl-tags"><span class="tl-tag tag-transit">Line 2 Direct</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="day5-b" class="alt-content">
+    <div class="info-box purple"><span class="info-icon">🎵</span><p><strong>Alt B — Full Hongdae K-Pop Day:</strong> Kalau HYBE perlu reservasi dan tidak bisa, fokuskan di Hongdae K-Pop world yang lengkap! Dari pagi hingga malam semuanya di Hongdae-Mapo area.</p></div>
+    <div class="timeline">
+      <div class="tl-item transit"><div class="tl-time">09:30</div><div class="tl-title">🏠 Transit ke Hongdae (Line 2 Direct)</div><div class="tl-desc">Seoul Nat'l Univ → Hongik Univ Station Exit 9. ±30 menit.</div><div class="tl-tags"><span class="tl-tag tag-transit">Line 2 Direct ±30 menit</span></div></div>
+      <div class="tl-item kpop"><div class="tl-time">10:00 — 11:30</div><div class="tl-title">🎵 With MuU + Playduck + K-Mecca</div><div class="tl-desc">Beli album & merch di With MuU (AK Plaza Lt 2), photocard & poca di K-Mecca, figure & goods di Playduck (depan AK Plaza).</div><div class="tl-tags"><span class="tl-tag tag-kpop">K-Pop</span><span class="tl-tag tag-shop">Jastip</span></div></div>
+      <div class="tl-item kpop"><div class="tl-time">11:30 — 12:30</div><div class="tl-title">🎵 Kpop Friends + Line Friends (jika masih ada)</div><div class="tl-desc">Kpop Friends store di Hongdae area. Line Friends check dulu apakah masih buka di lokasi Hongdae.</div><div class="tl-tags"><span class="tl-tag tag-kpop">K-Pop</span></div></div>
+      <div class="tl-item event"><div class="tl-time">12:00 — 14:00</div><div class="tl-title">🌙 Singgah Stella Event (Cafe Mellang, Hari Terakhir!)</div><div class="tl-desc">Stella event terakhir hari ini (sampai 18:30). Sempatin singgah lagi!</div><div class="tl-tags"><span class="tl-tag tag-event">Event</span><span class="tl-tag tag-kpop">K-Pop Fan</span></div></div>
+      <div class="tl-item food"><div class="tl-time">14:00 — 15:00</div><div class="tl-title">🍽️ Makan Siang Hongdae</div><div class="tl-desc">Papa Johns atau Korean food di sekitar Hongdae.</div><div class="tl-tags"><span class="tl-tag tag-food">Makan</span></div></div>
+      <div class="tl-item kpop"><div class="tl-time">15:00 — 17:30</div><div class="tl-title">🎤 Busking Sore Hongdae + Poca Spot Hunting</div><div class="tl-desc">Cari poca spot di Hongdae (biasanya ada di depan toko atau café yang set up trading area). Tonton busking sambil santai.</div><div class="tl-tags"><span class="tl-tag tag-kpop">Busking</span><span class="tl-tag tag-free">GRATIS</span></div></div>
+      <div class="tl-item event"><div class="tl-time">18:00</div><div class="tl-title">🎂 HOSHI BIRTHDAY PARTY — Cafe 2734</div><div class="tl-desc">34 Wausan-ro 27-gil, Mapo-gu. Jalan dari Hongdae ±15 menit atau naik taxi sebentar.</div><div class="tl-tags"><span class="tl-tag tag-event">Birthday Event</span><span class="tl-tag tag-kpop">SEVENTEEN</span></div></div>
+      <div class="tl-item transit"><div class="tl-time">Setelah event</div><div class="tl-title">🏠 Pulang Line 2</div><div class="tl-desc">Hongik Univ → Seoul National Univ. ±30 menit.</div><div class="tl-tags"><span class="tl-tag tag-transit">Line 2 Direct</span></div></div>
+    </div>
+  </div>
+
+  <div id="day5-c" class="alt-content">
+    <div class="info-box teal"><span class="info-icon">🗺️</span><p><strong>Alt C — Yongsan Area Deep Dive:</strong> Tidak hanya HYBE, tapi explore Yongsan Electronics Market (belanja elektronik), War Memorial, dan makan di sekitar area sebelum ke Hoshi event!</p></div>
+    <div class="timeline">
+      <div class="tl-item transit"><div class="tl-time">09:30</div><div class="tl-title">🏠 Transit ke Yongsan</div><div class="tl-desc">Line 2 → Sindorim → Line 1 → Yongsan Station Exit 4.</div><div class="tl-tags"><span class="tl-tag tag-transit">Line 2 → Line 1 Yongsan ±50 menit</span></div></div>
+      <div class="tl-item kpop"><div class="tl-time">10:00 — 12:00</div><div class="tl-title">🏢 HYBE HQ Foto + Yongsan Explore</div><div class="tl-desc">Foto HYBE dari luar. Walk ke War Memorial (gratis bagian luar). Explore Yongsan Electronics Mall (I'Park Mall) untuk perbandingan harga elektronik Korea.</div><div class="tl-tags"><span class="tl-tag tag-kpop">K-Pop Landmark</span><span class="tl-tag tag-sight">Wisata</span></div></div>
+      <div class="tl-item food"><div class="tl-time">12:00 — 13:00</div><div class="tl-title">🍱 Makan Siang di Yongsan / Itaewon</div><div class="tl-desc">Itaewon hanya beberapa stop dari Yongsan — banyak pilihan makanan international & halal!</div><div class="tl-tags"><span class="tl-tag tag-food">Makan</span></div></div>
+      <div class="tl-item transit"><div class="tl-time">13:30</div><div class="tl-title">🚇 Transit ke Hongdae</div><div class="tl-desc">Yongsan → Line 6 Sangsu → ke area Hongdae. ±40 menit.</div><div class="tl-tags"><span class="tl-tag tag-transit">Line 6 ke Sangsu/Hongdae area</span></div></div>
+      <div class="tl-item kpop"><div class="tl-time">14:00 — 17:30</div><div class="tl-title">🎵 K-Pop Stores Hongdae + Busking</div><div class="tl-desc">With MuU, Playduck, Kpop Friends, K-Mecca. Busking sore di depan Hongik Univ.</div><div class="tl-tags"><span class="tl-tag tag-kpop">K-Pop</span><span class="tl-tag tag-free">Busking Gratis</span></div></div>
+      <div class="tl-item event"><div class="tl-time">18:00</div><div class="tl-title">🎂 HOSHI BIRTHDAY — Cafe 2734, Wausan-ro</div><div class="tl-desc">Birthday fan event Hoshi di Cafe 2734 lantai 2!</div><div class="tl-tags"><span class="tl-tag tag-event">Birthday Event</span><span class="tl-tag tag-kpop">SEVENTEEN</span></div></div>
+      <div class="tl-item transit"><div class="tl-time">Selesai</div><div class="tl-title">🏠 Pulang Line 2</div><div class="tl-desc">Hongik Univ → Seoul National Univ Station.</div><div class="tl-tags"><span class="tl-tag tag-transit">Line 2 Direct</span></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- DAY 6: 20 Juni -->
+<div id="day-day6" class="day-section">
+  <div class="day-header" style="background: linear-gradient(135deg, #00BBD6, #26D07C);">
+    <div class="day-num">6</div>
+    <div><h2>Jumat, 20 Juni</h2><p>⭐ FULL K-POP DAY 2 — Seongsu + SM/JYP + Myeongdong</p></div>
+    <div class="day-type-badge">💜 Full KPop</div>
+  </div>
+
+  <div class="info-box purple">
+    <span class="info-icon">🎵</span>
+    <p><strong>Full K-Pop Day!</strong> Seongsu → SM Entertainment area → Myeongdong K-Pop store + CT Record. Rute ini searah karena semua di sisi selatan-timur Seoul, terjangkau dengan Line 2!</p>
+  </div>
+
+  <div class="alt-tabs">
+    <button class="alt-btn pink active" onclick="showAlt('day6','a',this)">🎵 Alt A — Seongsu + SM/JYP + Myeongdong</button>
+    <button class="alt-btn purple" onclick="showAlt('day6','b',this)">💿 Alt B — COEX + Gangnam + Myeongdong</button>
+    <button class="alt-btn teal" onclick="showAlt('day6','c',this)">🎤 Alt C — Hongdae Deep Dive + Busking</button>
+  </div>
+
+  <div id="day6-a" class="alt-content active">
+    <div class="timeline">
+      <div class="tl-item transit">
+        <div class="tl-time">09:30 — BERANGKAT</div>
+        <div class="tl-title">🏠 Transit ke Seongsu</div>
+        <div class="tl-desc">Line 2 dari Seoul Nat'l Univ langsung ke Seongsu Station (성수역). Line 2 sangat mudah! Exit 4.</div>
+        <div class="tl-tags"><span class="tl-tag tag-transit">Line 2 Direct ke Seongsu</span><span class="tl-tag tag-transit">±30 menit</span></div>
+      </div>
+      <div class="tl-item shop">
+        <div class="tl-time">10:00 — 12:00</div>
+        <div class="tl-title">🎡 Seongsu Area — Toy Story Popup + Concept Stores</div>
+        <div class="tl-desc">Area Seongsu penuh popup store dan concept store trendi. Cari Toy Story Popup (cek lokasi pasti di Instagram/Naver Maps sebelum berangkat!). Seoul Forest store juga di sini. Cafe hopping di cafe aesthetic banyak yang gratis masuk!</div>
+        <div class="tl-tags"><span class="tl-tag tag-shop">Jastip</span><span class="tl-tag tag-sight">Seongsu Trend</span></div>
+      </div>
+      <div class="tl-item food">
+        <div class="tl-time">12:00 — 13:00</div>
+        <div class="tl-title">🍱 Makan Siang Seongsu</div>
+        <div class="tl-desc">Seongsu banyak cafe & restoran trendi. Mencoba makanan di sini lebih Instagram-worthy tapi harga bisa lebih mahal dari average. Budget ±12,000-18,000 KRW untuk makan siang.</div>
+        <div class="tl-tags"><span class="tl-tag tag-food">Makan</span></div>
+      </div>
+      <div class="tl-item transit">
+        <div class="tl-time">13:00 — 13:30</div>
+        <div class="tl-title">🚇 Transit ke SM Building Area</div>
+        <div class="tl-desc">Dari Seongsu Station Line 2 → lanjut ke Samseong Station atau naik bus ke area SM Entertainment (Cheongdam/Gangnam). SM lama ada di dekat Cheongdam, SM baru/COEX Artium ada di COEX.</div>
+        <div class="tl-tags"><span class="tl-tag tag-transit">Line 2 ke Samseong atau bus</span><span class="tl-tag tag-transit">±25 menit</span></div>
+      </div>
+      <div class="tl-item kpop">
+        <div class="tl-time">13:30 — 15:00</div>
+        <div class="tl-title">🎤 SM Entertainment + COEX Area K-Pop</div>
+        <div class="tl-desc">SM Town di COEX Artium — ada toko SM resmi dan museum kecil. Foto di depan COEX Artium dan area K-Pop icons. Juga bisa foto di SM Building lama (di Cheongdam, ada taman kecil di depannya).</div>
+        <div class="tl-tags"><span class="tl-tag tag-kpop">SM Entertainment</span><span class="tl-tag tag-shop">Merch Resmi</span></div>
+      </div>
+      <div class="tl-item transit">
+        <div class="tl-time">15:30 — 16:00</div>
+        <div class="tl-title">🚇 Transit ke Myeongdong (JYP area bisa lewat)</div>
+        <div class="tl-desc">JYP building yang baru ada di Gangdong (jauh, Line 5 Bangi). Kalau mau ke sana butuh waktu lebih. Atau langsung ke Myeongdong: dari Samseong Line 2 → transfer ke Line 4 di Euljiro 3-ga → Myeongdong.</div>
+        <div class="tl-tags"><span class="tl-tag tag-transit">Line 2 → Line 4 Myeongdong</span></div>
+      </div>
+      <div class="tl-item kpop">
+        <div class="tl-time">16:00 — 18:00</div>
+        <div class="tl-title">💿 CT Record + Myeongdong K-Pop Area</div>
+        <div class="tl-desc">CT Record lagi (untuk album yang belum sempat beli)! Harga paling murah untuk album K-Pop. Cari juga Poca Spot di sekitar Myeongdong (biasanya ada area trading di alun-alun atau dekat toko). Explore Myeongdong Underground Mall!</div>
+        <div class="tl-tags"><span class="tl-tag tag-kpop">K-Pop</span><span class="tl-tag tag-shop">Jastip</span></div>
+      </div>
+      <div class="tl-item kpop">
+        <div class="tl-time">18:00 — 20:00</div>
+        <div class="tl-title">🎤 Myeongdong Busking + Street Performer</div>
+        <div class="tl-desc">Myeongdong-gil pejalan kaki di malam hari ada street performer! Berbeda dengan Hongdae yang lebih underground, Myeongdong lebih mainstream. Juga beli street food malam sambil nonton.</div>
+        <div class="tl-tags"><span class="tl-tag tag-kpop">Busking</span><span class="tl-tag tag-food">Street Food</span><span class="tl-tag tag-free">GRATIS</span></div>
+      </div>
+      <div class="tl-item transit">
+        <div class="tl-time">20:00 — 21:00</div>
+        <div class="tl-title">🏠 Pulang ke Gwanak-gu</div>
+        <div class="tl-desc">Myeongdong Station Line 4 → Euljiro 3-ga → Line 2 → Seoul National Univ Station.</div>
+        <div class="tl-tags"><span class="tl-tag tag-transit">Line 4 → Line 2</span><span class="tl-tag tag-transit">±40 menit</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="day6-b" class="alt-content">
+    <div class="info-box purple"><span class="info-icon">💿</span><p><strong>Alt B — Gangnam K-Pop Lengkap:</strong> Back to Gangnam! COEX + SM Town + Revisit tempat yang kemarin belum sempat. Sekalian belanja last minute di COEX.</p></div>
+    <div class="timeline">
+      <div class="tl-item transit"><div class="tl-time">10:00</div><div class="tl-title">🏠 Transit ke COEX (Line 2 → Samseong)</div><div class="tl-desc">Line 2 langsung ke Samseong Station. ±35 menit.</div><div class="tl-tags"><span class="tl-tag tag-transit">Line 2 Direct ±35 menit</span></div></div>
+      <div class="tl-item kpop"><div class="tl-time">10:35 — 12:30</div><div class="tl-title">💿 COEX K-Pop Full Experience</div><div class="tl-desc">Ktown4u lagi untuk yang belum dibeli. SM Town COEX Artium — merchandise SM Ent resmi. Foto Starfield Library lagi kalau kemarin kurang!</div><div class="tl-tags"><span class="tl-tag tag-kpop">K-Pop</span><span class="tl-tag tag-shop">Jastip</span></div></div>
+      <div class="tl-item food"><div class="tl-time">12:30 — 13:30</div><div class="tl-title">🍽️ Makan Siang COEX Food Court</div><div class="tl-desc">Makan di dalam COEX Mall food area.</div><div class="tl-tags"><span class="tl-tag tag-food">Makan</span></div></div>
+      <div class="tl-item kpop"><div class="tl-time">13:30 — 16:00</div><div class="tl-title">🐻 K-Star Road + Gangnam Explore</div><div class="tl-desc">Foto lagi di K-Star Road, cari spot yang kemarin miss. Explore Apgujeong Rodeo Street. Gangnam area sangat K-Pop friendly!</div><div class="tl-tags"><span class="tl-tag tag-kpop">K-Pop</span><span class="tl-tag tag-sight">Wisata</span></div></div>
+      <div class="tl-item transit"><div class="tl-time">16:30</div><div class="tl-title">🚇 Transit ke Myeongdong</div><div class="tl-desc">Line 2 → Euljiro 3-ga → Line 4 → Myeongdong. ±30 menit.</div><div class="tl-tags"><span class="tl-tag tag-transit">±30 menit</span></div></div>
+      <div class="tl-item kpop"><div class="tl-time">17:00 — 20:00</div><div class="tl-title">💿 CT Record + Myeongdong Shopping + Busking</div><div class="tl-desc">CT Record beli album terakhir. Olive Young jika ada yang belum dibeli. Malam: Myeongdong busking & street food!</div><div class="tl-tags"><span class="tl-tag tag-kpop">K-Pop</span><span class="tl-tag tag-shop">Jastip</span><span class="tl-tag tag-free">Busking Gratis</span></div></div>
+      <div class="tl-item transit"><div class="tl-time">20:30</div><div class="tl-title">🏠 Pulang — Line 4 → Line 2</div><div class="tl-desc">Myeongdong → Euljiro 3-ga → Seoul Nat'l Univ. ±40 menit.</div><div class="tl-tags"><span class="tl-tag tag-transit">±40 menit</span></div></div>
+    </div>
+  </div>
+
+  <div id="day6-c" class="alt-content">
+    <div class="info-box teal"><span class="info-icon">🎤</span><p><strong>Alt C — Hongdae Full Day Round 2:</strong> Balik ke Hongdae untuk deeper explore! Area Hongdae sangat besar dan ada banyak yang bisa dikunjungi.</p></div>
+    <div class="timeline">
+      <div class="tl-item transit"><div class="tl-time">10:00</div><div class="tl-title">🏠 Transit ke Hongdae (Line 2 Direct)</div><div class="tl-desc">Seoul Nat'l Univ → Hongik Univ Station. ±30 menit.</div><div class="tl-tags"><span class="tl-tag tag-transit">Line 2 Direct ±30 menit</span></div></div>
+      <div class="tl-item kpop"><div class="tl-time">10:30 — 13:00</div><div class="tl-title">🎵 Hongdae K-Pop Stores Revisit & Poca Trading</div><div class="tl-desc">Habiskan budget terakhir di K-Pop stores Hongdae. Cari poca trading area (biasanya ramai siang-sore). With MuU, Kpop Friends, K-Mecca, Line Friends (cek apakah masih buka).</div><div class="tl-tags"><span class="tl-tag tag-kpop">K-Pop</span><span class="tl-tag tag-shop">Jastip</span></div></div>
+      <div class="tl-item food"><div class="tl-time">13:00 — 14:00</div><div class="tl-title">🍗 Papa Johns Hongdae!</div><div class="tl-desc">Papa Johns ada di Hongdae — experience pizza Korea style. Atau ramen di warung sekitar.</div><div class="tl-tags"><span class="tl-tag tag-food">Makan Siang</span></div></div>
+      <div class="tl-item kpop"><div class="tl-time">14:00 — 17:00</div><div class="tl-title">🎤 Hongdae Busking Sore + Explore Alley</div><div class="tl-desc">Busking sore Hongdae. Explore gang-gang kecil di sekitar Hongdae untuk menemukan cafe tersembunyi, toko vintage, grafiti art.</div><div class="tl-tags"><span class="tl-tag tag-kpop">Busking</span><span class="tl-tag tag-free">GRATIS</span></div></div>
+      <div class="tl-item transit"><div class="tl-time">17:30</div><div class="tl-title">🚇 Transit ke Myeongdong (CT Record!)</div><div class="tl-desc">Hongik Univ → Line 2 → Euljiro 3-ga → Line 4 → Myeongdong. ±45 menit.</div><div class="tl-tags"><span class="tl-tag tag-transit">±45 menit</span></div></div>
+      <div class="tl-item kpop"><div class="tl-time">18:00 — 20:00</div><div class="tl-title">💿 CT Record + Myeongdong Busking Malam</div><div class="tl-desc">CT Record album terakhir! Kemudian nikmati malam Myeongdong dengan street food dan street performer.</div><div class="tl-tags"><span class="tl-tag tag-kpop">K-Pop</span><span class="tl-tag tag-food">Street Food</span></div></div>
+      <div class="tl-item transit"><div class="tl-time">20:30</div><div class="tl-title">🏠 Pulang</div><div class="tl-desc">Myeongdong → Line 4 → Euljiro 3-ga → Line 2 → Seoul Nat'l Univ. ±40 menit.</div><div class="tl-tags"><span class="tl-tag tag-transit">±40 menit</span></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- DAY 7: 21 Juni -->
+<div id="day-day7" class="day-section">
+  <div class="day-header" style="background: linear-gradient(135deg, #FF8C61, #F7B731);">
+    <div class="day-num">7</div>
+    <div><h2>Sabtu, 21 Juni</h2><p>Last Day — Jastip Last Minute + Soul My Soul + Departure</p></div>
+    <div class="day-type-badge">Jastip Day</div>
+  </div>
+
+  <div class="info-box pink">
+    <span class="info-icon">✈️</span>
+    <p><strong>Hari terakhir!</strong> Fokus belanja jastip yang belum lengkap. Pastikan cek jam penerbangan dan hitung waktu untuk ke bandara. Incheon Airport: minimal 3 jam sebelum keberangkatan. Gimpo Airport: minimal 2 jam. Naik AREX dari Seoul Station!</p>
+  </div>
+
+  <div class="alt-tabs">
+    <button class="alt-btn pink active" onclick="showAlt('day7','a',this)">🛒 Alt A — Soul My Soul + Dongdaemun + Departure</button>
+    <button class="alt-btn purple" onclick="showAlt('day7','b',this)">🎵 Alt B — Myeongdong Last Round + Departure</button>
+    <button class="alt-btn teal" onclick="showAlt('day7','c',this)">✈️ Alt C — Pagi Belanja Cepat + Early Departure</button>
+  </div>
+
+  <div id="day7-a" class="alt-content active">
+    <div class="timeline">
+      <div class="tl-item transit">
+        <div class="tl-time">08:00 — BERANGKAT</div>
+        <div class="tl-title">🏠 Start Pagi — Pergi ke Soul My Soul Area</div>
+        <div class="tl-desc">Soul My Soul ada di beberapa lokasi — cek lokasi paling terbaru di Google Maps. Biasanya di area Myeongdong atau Insadong. Naik subway yang sesuai.</div>
+        <div class="tl-tags"><span class="tl-tag tag-transit">Cek lokasi pasti di Naver Maps</span></div>
+      </div>
+      <div class="tl-item shop">
+        <div class="tl-time">09:00 — 10:30</div>
+        <div class="tl-title">🛍️ Soul My Soul — Souvenir & Fashion Korea</div>
+        <div class="tl-desc">Soul My Soul terkenal untuk souvenir Korea yang cute & unik. Harga terjangkau untuk oleh-oleh. Beli last minute souvenir, pakaian Korea, aksesoris. Cek jam buka terlebih dahulu!</div>
+        <div class="tl-tags"><span class="tl-tag tag-shop">Jastip</span><span class="tl-tag tag-sight">Souvenir</span></div>
+      </div>
+      <div class="tl-item shop">
+        <div class="tl-time">10:30 — 12:30</div>
+        <div class="tl-title">🏪 Dongdaemun Toy & Stationery Market</div>
+        <div class="tl-desc">Dongdaemun History & Culture Park Station (Line 2/4/5). Terakhir berburu stationery & mainan Korea! Pasar ini sangat ramai dan penuh pilihan. Harga grosir untuk stationery.</div>
+        <div class="tl-tags"><span class="tl-tag tag-shop">Jastip</span><span class="tl-tag tag-transit">Line 2/4/5 Dongdaemun H&C Park</span></div>
+      </div>
+      <div class="tl-item food">
+        <div class="tl-time">12:30 — 13:30</div>
+        <div class="tl-title">🍜 Makan Siang Terakhir di Korea!</div>
+        <div class="tl-desc">Makan makanan Korea favorit untuk terakhir kali! Area Dongdaemun atau kembali ke Myeongdong. Makan yang belum sempat dicoba selama trip!</div>
+        <div class="tl-tags"><span class="tl-tag tag-food">Makan Siang</span></div>
+      </div>
+      <div class="tl-item transit">
+        <div class="tl-time">14:00 — 14:45</div>
+        <div class="tl-title">🏠 Kembali ke Penginapan — Packing Final</div>
+        <div class="tl-desc">Kembali ke Gwanak-gu untuk packing akhir. Pastikan tidak ada yang tertinggal!</div>
+        <div class="tl-tags"><span class="tl-tag tag-transit">Pulang ke Penginapan</span></div>
+      </div>
+      <div class="tl-item transit">
+        <div class="tl-time">15:30 — 17:00</div>
+        <div class="tl-title">✈️ Berangkat ke Bandara — Incheon Airport</div>
+        <div class="tl-desc">Ke Seoul National Univ Station → Line 2 ke Hongik Univ → AREX (Airport Express) ke Incheon Airport! Atau Line 2 → Seoul Station → AREX Express (55 menit, harga lebih mahal) / AREX All-stop (70 menit, lebih murah ±9,500 KRW). Sesuaikan dengan jam penerbangan!</div>
+        <div class="tl-tags"><span class="tl-tag tag-transit">AREX dari Seoul Station / Hongik Univ</span><span class="tl-tag tag-transit">±55-90 menit ke Incheon</span></div>
+        <div class="transit-card">
+          <strong>Rute ke Incheon Airport:</strong>
+          <div class="transit-steps">
+            <div class="transit-step">🟢 Line 2 Seoul Nat'l Univ</div>
+            <span class="transit-arr">→</span>
+            <div class="transit-step">Hongik Univ Station</div>
+            <span class="transit-arr">→</span>
+            <div class="transit-step">🟡 AREX (Airport Express)</div>
+            <span class="transit-arr">→</span>
+            <div class="transit-step">Incheon T1 atau T2</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="day7-b" class="alt-content">
+    <div class="info-box purple"><span class="info-icon">💿</span><p><strong>Alt B — Myeongdong Last Round:</strong> Kalau ada yang masih mau dibeli di Myeongdong, Olive Young, Daiso, atau CT Record — ini last chance! Setelah itu langsung ke bandara.</p></div>
+    <div class="timeline">
+      <div class="tl-item transit"><div class="tl-time">08:30</div><div class="tl-title">🏠 Transit ke Myeongdong</div><div class="tl-desc">Line 2 → Euljiro 3-ga → Line 4 → Myeongdong Station. ±40 menit.</div><div class="tl-tags"><span class="tl-tag tag-transit">±40 menit</span></div></div>
+      <div class="tl-item shop"><div class="tl-time">09:00 — 11:30</div><div class="tl-title">🛒 Myeongdong Last Shopping!</div><div class="tl-desc">CT Record (album terakhir), Olive Young (restok atau yang belum dibeli), Daiso (souvenir murah). Gunakan sisa budget dengan bijak!</div><div class="tl-tags"><span class="tl-tag tag-shop">Jastip</span><span class="tl-tag tag-kpop">K-Pop</span></div></div>
+      <div class="tl-item shop"><div class="tl-time">11:30 — 12:00</div><div class="tl-title">🏠 Soul My Soul (jika sempat)</div><div class="tl-desc">Cek lokasi Soul My Soul di area Myeongdong/Insadong untuk souvenir terakhir.</div><div class="tl-tags"><span class="tl-tag tag-shop">Jastip</span></div></div>
+      <div class="tl-item food"><div class="tl-time">12:00 — 13:00</div><div class="tl-title">🍜 Makan Siang Terakhir di Korea</div><div class="tl-desc">Makan terakhir yang berkesan! Coba yang belum sempat, atau makan favorit yang paling enak selama trip.</div><div class="tl-tags"><span class="tl-tag tag-food">Makan Terakhir</span></div></div>
+      <div class="tl-item transit"><div class="tl-time">13:30</div><div class="tl-title">🏠 Kembali ke Penginapan — Packing</div><div class="tl-desc">Balik ke Gwanak-gu untuk ambil koper dan packing final.</div><div class="tl-tags"><span class="tl-tag tag-transit">Kembali ke Penginapan</span></div></div>
+      <div class="tl-item transit"><div class="tl-time">15:00+</div><div class="tl-title">✈️ Ke Bandara via AREX</div><div class="tl-desc">Seoul Nat'l Univ → Line 2 → Hongik Univ → AREX ke Incheon Airport. Sesuaikan dengan jam penerbangan!</div><div class="tl-tags"><span class="tl-tag tag-transit">AREX dari Hongik Univ</span></div></div>
+    </div>
+  </div>
+
+  <div id="day7-c" class="alt-content">
+    <div class="info-box teal"><span class="info-icon">⏰</span><p><strong>Alt C — Early Departure:</strong> Kalau penerbangan pagi atau siang, langsung ke bandara dari penginapan setelah check-out!</p></div>
+    <div class="timeline">
+      <div class="tl-item"><div class="tl-time">Malam H-1</div><div class="tl-title">📦 Packing Semalam Sebelumnya</div><div class="tl-desc">Packing semua barang malam sebelumnya agar pagi tidak terburu-buru. Pisahkan barang bawaan tangan dan bagasi.</div><div class="tl-tags"><span class="tl-tag tag-sight">Persiapan</span></div></div>
+      <div class="tl-item food"><div class="tl-time">07:00</div><div class="tl-title">☕ Sarapan Terakhir di Seoul</div><div class="tl-desc">Convenience store terdekat (GS25, CU, 7-Eleven) untuk sarapan cepat. Beli Banana Milk Korea untuk kenangan!</div><div class="tl-tags"><span class="tl-tag tag-food">Sarapan</span></div></div>
+      <div class="tl-item transit"><div class="tl-time">08:00</div><div class="tl-title">✈️ Berangkat ke Bandara Incheon</div><div class="tl-desc">Seoul Nat'l Univ Station Line 2 → Hongik Univ Station → AREX (Airport Express) Terminal 1 atau 2. AREX All-stop: ±70 menit, ±9,500 KRW. AREX Express: ±55 menit, ±11,000 KRW.</div><div class="tl-tags"><span class="tl-tag tag-transit">AREX ke Incheon Airport</span><span class="tl-tag tag-transit">±70-90 menit dari Gwanak</span></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- TIPS -->
+<div id="day-tips" class="day-section">
+  <div class="day-header" style="background: linear-gradient(135deg, #534AB7, #9B5DE5);">
+    <div class="day-num">💡</div>
+    <div><h2>Tips & Info Penting</h2><p>Transport, Budget, Makan, dan Tips Korea</p></div>
+    <div class="day-type-badge">Must Read!</div>
+  </div>
+
+  <div class="section-title">🚇 Panduan Subway Seoul</div>
+  <div style="background:#fff; border-radius:var(--radius-sm); padding:16px; box-shadow:var(--shadow); margin-bottom:20px;">
+    <div style="font-size:13px; color:var(--gray-700); line-height:1.8;">
+      <p><strong>Dari Penginapan (Seoul National Univ Station / Nakseongdae Stn — Line 2 🟢)</strong></p>
+      <br>
+      <p>• <strong>Myeongdong (Line 4):</strong> Seoul Nat'l Univ → Euljiro 3-ga → transfer Line 4 → Myeongdong. ±40 menit, ~2x transfer</p>
+      <p>• <strong>Hongdae/Hongik Univ (Line 2):</strong> LANGSUNG! Seoul Nat'l Univ → Hongik Univ. ±30 menit, tanpa transfer ⭐</p>
+      <p>• <strong>Gangnam/COEX/Samseong (Line 2):</strong> LANGSUNG! Seoul Nat'l Univ → Samseong. ±35 menit ⭐</p>
+      <p>• <strong>Gyeongbokgung/Bukchon/Anguk (Line 3):</strong> Seoul Nat'l Univ → Euljiro 3-ga → Line 3 → Gyeongbokgung / Anguk. ±55 menit</p>
+      <p>• <strong>Ikseondong Hanok Street (Line 3):</strong> Lewat Anguk Station, jalan kaki ±10 menit</p>
+      <p>• <strong>Yongsan/HYBE (Line 1):</strong> Seoul Nat'l Univ → Sindorim → Line 1 → Yongsan. ±50 menit</p>
+      <p>• <strong>Seongsu (Line 2):</strong> LANGSUNG! Seoul Nat'l Univ → Seongsu. ±30 menit ⭐</p>
+      <br>
+      <p style="color:var(--pink); font-weight:700;">💡 Line 2 (Hijau) adalah sahabat terbaik dari Gwanak-gu! Paling banyak tujuan wisata terjangkau via Line 2 tanpa transfer.</p>
+    </div>
+  </div>
+
+  <div class="section-title">👘 Tips Sewa Hanbok</div>
+  <div style="background:#fff; border-radius:var(--radius-sm); padding:16px; box-shadow:var(--shadow); margin-bottom:20px;">
+    <div style="font-size:13px; color:var(--gray-700); line-height:1.8;">
+      <p>• <strong>Pink Hanbok:</strong> 137-3 Sajik-ro, Jongno-gu, Jongno District, Seoul — dekat Gyeongbokgung Station Exit 5</p>
+      <p>• <strong>Daehan Hanbok:</strong> alternatif lain di area sekitar Gyeongbokgung, cek lokasi pasti di Naver Maps</p>
+      <p>• Dengan hanbok, masuk Gyeongbokgung Palace & National Folk Museum biasanya <strong>GRATIS</strong> — pastikan tanyakan ke staff tempat sewa untuk konfirmasi kebijakan terbaru</p>
+      <p>• Booking online dulu kalau bisa untuk hindari antri, terutama di musim ramai turis (Juni termasuk musim panas)</p>
+      <p>• Pilih hanbok modern atau tradisional sesuai selera — paket biasanya termasuk aksesoris rambut & tas kecil</p>
+      <p>• Pastikan tahu jam kembali sewa supaya tidak kena charge tambahan, terutama kalau itinerary sampai malam (Namsan Tower)</p>
+    </div>
+  </div>
+
+  <div class="tips-grid">
+    <div class="tip-card">
+      <h4>💳 T-Money Card</h4>
+      <p>Beli di stasiun atau GS25/CU. Isi minimal 30,000 KRW. Bisa dipakai subway, bus, bahkan bayar di convenience store. Lebih hemat dari beli tiket satuan!</p>
+    </div>
+    <div class="tip-card purple">
+      <h4>📱 Naver Maps</h4>
+      <p>Google Maps kurang akurat di Korea! Wajib install Naver Maps untuk navigasi subway, bus, dan jalan kaki. Real-time dan sangat akurat.</p>
+    </div>
+    <div class="tip-card teal">
+      <h4>🌐 Internet</h4>
+      <p>Sewa Pocket WiFi di bandara atau beli SIM Korea (Incheon Airport ada konter). Budget: ±10,000-15,000 KRW/hari untuk SIM. WiFi lebih murah kalau share bertiga.</p>
+    </div>
+    <div class="tip-card coral">
+      <h4>🍜 Budget Makan</h4>
+      <p>Convenience store (GS25, CU): ±3,000-5,000 KRW. Gimbap shop: ±3,000-5,000 KRW. Street food: ±1,000-5,000 per item. Restoran biasa: ±8,000-15,000 KRW.</p>
+    </div>
+  </div>
+
+  <div class="section-title">🍽️ Rekomendasi Makanan Budget</div>
+  <div style="background:#fff; border-radius:var(--radius-sm); padding:16px; box-shadow:var(--shadow); margin-bottom:20px;">
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap:12px;">
+      <div><p style="font-size:13px; font-weight:700">🐔 Chimaek (Chicken + Beer)</p><p style="font-size:12px; color:var(--gray-500)">BHC Chicken ada di banyak lokasi. ±15,000-20,000 KRW</p></div>
+      <div><p style="font-size:13px; font-weight:700">🍕 Papa Johns Korea</p><p style="font-size:12px; color:var(--gray-500)">Ada di Hongdae. Menu Korea-fusion, harga mirip Indonesia.</p></div>
+      <div><p style="font-size:13px; font-weight:700">🍱 Kimbap / Gimbap</p><p style="font-size:12px; color:var(--gray-500)">±2,500-4,000 KRW/gulung. Makan kenyang dan murah!</p></div>
+      <div><p style="font-size:13px; font-weight:700">🌮 Tteokbokki</p><p style="font-size:12px; color:var(--gray-500)">Street food ±3,000-5,000 KRW. Ada di setiap sudut Seoul!</p></div>
+      <div><p style="font-size:13px; font-weight:700">🍜 Instant Ramen (CU/GS25)</p><p style="font-size:12px; color:var(--gray-500)">±1,500-2,000 KRW. Makan di dalam convenience store!</p></div>
+      <div><p style="font-size:13px; font-weight:700">🥟 Mandu (Dumpling)</p><p style="font-size:12px; color:var(--gray-500)">±5,000 KRW untuk porsi 6-8 biji. Enak dan mengenyangkan.</p></div>
+    </div>
+  </div>
+
+  <div class="section-title">🎵 Checklist K-Pop Destinations</div>
+  <div style="background:#fff; border-radius:var(--radius-sm); padding:16px; box-shadow:var(--shadow); margin-bottom:20px;">
+    <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box"><div class="check-inner"></div></div><span>HiKR Ground (Gratis! Buka Selasa-Minggu)</span></div>
+    <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box"><div class="check-inner"></div></div><span>Hongdae Busking (area Hongik Univ Exit 9)</span></div>
+    <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box"><div class="check-inner"></div></div><span>Ktown4u COEX (album harga terjangkau)</span></div>
+    <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box"><div class="check-inner"></div></div><span>K-Star Road Gangnam (patung kpop — gratis)</span></div>
+    <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box"><div class="check-inner"></div></div><span>CT Record Myeongdong (album termurah!)</span></div>
+    <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box"><div class="check-inner"></div></div><span>With MuU Hongdae (album & lightstick AK Plaza)</span></div>
+    <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box"><div class="check-inner"></div></div><span>Playduck (depan AK Plaza Hongdae)</span></div>
+    <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box"><div class="check-inner"></div></div><span>K-Mecca Hongdae (poca spot)</span></div>
+    <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box"><div class="check-inner"></div></div><span>Kpop Friends Hongdae</span></div>
+    <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box"><div class="check-inner"></div></div><span>HYBE HQ Yongsan (foto luar)</span></div>
+    <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box"><div class="check-inner"></div></div><span>SM Town COEX Artium</span></div>
+    <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box"><div class="check-inner"></div></div><span>Myeongdong Busking malam</span></div>
+    <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box"><div class="check-inner"></div></div><span>Stella Lovers Club Event (18-19 Juni, Cafe Mellang)</span></div>
+    <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box"><div class="check-inner"></div></div><span>Hoshi Birthday Event (19 Juni 18:00, Cafe 2734)</span></div>
+    <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box"><div class="check-inner"></div></div><span>Poca/Photocard Trading Spot</span></div>
+  </div>
+
+  <div class="section-title">🛒 Checklist Jastip</div>
+  <div style="background:#fff; border-radius:var(--radius-sm); padding:16px; box-shadow:var(--shadow);">
+    <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box" style="border-color:var(--teal)"><div class="check-inner"></div></div><span>Soul My Soul — souvenir & fashion</span></div>
+    <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box" style="border-color:var(--teal)"><div class="check-inner"></div></div><span>Daiso Myeongdong 12 lantai</span></div>
+    <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box" style="border-color:var(--teal)"><div class="check-inner"></div></div><span>Dongdaemun Toy & Stationery Market</span></div>
+    <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box" style="border-color:var(--teal)"><div class="check-inner"></div></div><span>Olive Young Myeongdong (bawa paspor tax free!)</span></div>
+    <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box" style="border-color:var(--teal)"><div class="check-inner"></div></div><span>Seoul Forest Store (di area Seongsu)</span></div>
+    <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box" style="border-color:var(--teal)"><div class="check-inner"></div></div><span>Papa Johns Korea</span></div>
+    <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box" style="border-color:var(--teal)"><div class="check-inner"></div></div><span>Toy Story Popup Store — Seongsu Area</span></div>
+    <div class="checklist-item" onclick="toggleCheck(this)"><div class="check-box" style="border-color:var(--teal)"><div class="check-inner"></div></div><span>BHC Chicken (coba di salah satu hari!)</span></div>
+  </div>
+</div>
+
+</div>
+
+<script>
+function showDay(day) {
+  document.querySelectorAll('.day-section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('day-' + day).classList.add('active');
+  const tabs = document.querySelectorAll('.nav-tab');
+  const idx = ['overview','day1','day2','day3','day4','day5','day6','day7','tips'].indexOf(day);
+  if (idx >= 0) tabs[idx].classList.add('active');
+}
+
+function showAlt(day, alt, btn) {
+  const parent = btn.closest('.day-section');
+  parent.querySelectorAll('.alt-content').forEach(c => c.classList.remove('active'));
+  parent.querySelectorAll('.alt-btn').forEach(b => b.classList.remove('active'));
+  parent.querySelector('#' + day + '-' + alt).classList.add('active');
+  btn.classList.add('active');
+}
+
+function toggleCheck(item) {
+  item.classList.toggle('checked');
+}
+</script>
+</body>
+</html>
